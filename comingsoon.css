@@ -6,15 +6,16 @@ html, body {height: 100%; font-family: 'Open Sans', sans-serif; font-weight:400;
     position: relative;
 	width: 420px;
 	height: 320px;
-	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
-	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);	
+	-webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);	
     background-color:#FFFFFF;
     text-align: center;
     margin-right:auto;
     margin-left:auto;
     color:#BC223A;
 	display:none;
+	cursor:pointer;
 }
 /*
 #item:before{
@@ -63,9 +64,5 @@ html, body {height: 100%; font-family: 'Open Sans', sans-serif; font-weight:400;
 	font-size: 50%;
 }
 html { 
-	background: url(backm.png) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: url(back.png) fixed; 
 }
