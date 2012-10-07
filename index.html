@@ -6,7 +6,15 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<script>
   			$(document).ready(function () {
-  				$("#item").delay(800).addClass('animated flipXIn');
+				setTimeout(function(){
+					$("#item").css('display', 'block').addClass('animated bounceInUp');
+					$("#item").click(function() {
+						$("#item").addClass('animated hinge');
+						setTimeout(function(){
+							$("#item").css('display', 'block').removeClass('hinge').addClass('animated bounceInUp');
+						},2000);
+					});
+				},1500);
 			});
   		</script>
 	</head>

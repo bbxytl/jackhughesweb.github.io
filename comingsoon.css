@@ -14,7 +14,9 @@ html, body {height: 100%; font-family: 'Open Sans', sans-serif; font-weight:400;
     margin-right:auto;
     margin-left:auto;
     color:#BC223A;
+	display:none;
 }
+/*
 #item:before{
 	z-index: -1;
 	position: absolute;
@@ -24,10 +26,12 @@ html, body {height: 100%; font-family: 'Open Sans', sans-serif; font-weight:400;
 	height: 320px;
 	content: '';
 	background-color: #FFFFFF;
+	
 	-webkit-transform: rotate(3deg);
 	-moz-transform: rotate(3deg);
 	-o-transform: rotate(3deg);
 	transform: rotate(3deg);
+	
 	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
@@ -43,17 +47,18 @@ html, body {height: 100%; font-family: 'Open Sans', sans-serif; font-weight:400;
 	height: 320px;
 	content: '';
 	background-color: #FFFFFF;
+	
 	-webkit-transform: rotate(-2deg);
 	-moz-transform: rotate(-2deg);
 	-o-transform: rotate(-2deg);
 	transform: rotate(-2deg);
+	
 	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 	}
-	#item{
-		display:none;
-	}
+	*/
+
 .small{
 	font-size: 50%;
 }
