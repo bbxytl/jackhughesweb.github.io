@@ -18,6 +18,22 @@
                 $.jribbble.getPlayerFollowers('hughezyy48', function (followers) {
                     $('.df').html(followers.total);
                 });
+                $(".twto").hover(
+                    function () {
+                        $(".tf").css("visibility", "visible");
+                    }, 
+                    function () {
+                        $(".tf").css("visibility", "hidden");
+                    }
+                );
+                $(".drto").hover(
+                    function () {
+                        $(".df").css("visibility", "visible");
+                    }, 
+                    function () {
+                        $(".df").css("visibility", "hidden");
+                    }
+                );
             });
         </script>
 		<!--[if !IE 7]>
@@ -94,20 +110,21 @@
 		<div id="footer">
 			<div class="full">
 				<div class="normal" style="text-align:center;"><br>
-                    <div class="white" style="width:123px;">
-				    	<table>
+                    <div class="white" style="width:150px;">
+				    	<table style="margin-left:auto; margin-right:auto;">
                             <tr>
-                                <td style="padding:2px;">
+                                <td style="padding:2px; width:70px; margin-left:auto; margin-right:auto; text-align:center;" class="twto">
                                     <a href="http://www.twitter.com/hughezyy48">
 						                <img src="http://twitter.com/images/resources/twitter-bird-light-bgs.png" width="60px">
 					                </a>
                                 </td>
-                                <td style="padding:2px;">
+                                <td style="padding:2px; width:70px; margin-left:auto; margin-right:auto; text-align:center;" class="drto">
 					                <a href="http://dribbble.com/hughezyy48">
 						                <img src="http://dribbble.com/images/dribbble-ball-1col-dnld.png" width="40px">
 					                </a>
                                 </td>
                             </tr>
+                            
                             <tr>
                                 <td style="padding:2px; text-align:center;">
                                     <span class="tf tooltip"></span>
@@ -118,7 +135,7 @@
                             </tr>
                            
                         </table><br>
-                        <span style="font-size:70%;">&copy; Jack Hughes 2012</span>
+                        <span style="font-size:90%;">&copy; Jack Hughes 2012</span>
                     </div>
 				</div>
 			</div>
