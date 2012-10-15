@@ -115,7 +115,7 @@ span.tooltip {
       padding: 10px;
       font-size: 14px;
       text-align: center;
-      color: rgb(113, 157, 171);
+      color: #000000;
       background: rgb(211, 211, 211);
       border: 4px solid rgb(211, 211, 211);
       border-radius: 5px;
@@ -124,17 +124,6 @@ span.tooltip {
       visibility:hidden;
 }
 
-span.tooltip:after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-width: 10px;
-      border-style: solid;
-      border-color: transparent transparent #D3D3D3 transparent;
-      top: -24px;
-      left: 20px;
-}
 span.tooltip:after {
       content: "";
       position: absolute;
