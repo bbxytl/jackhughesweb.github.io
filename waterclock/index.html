@@ -1,11 +1,11 @@
 <html>
-	<head>
+    <head>
         <title>Jack Hughes</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<link href="animate-custom.css" rel="stylesheet" type="text/css">
+		<link href="../style.css" rel="stylesheet" type="text/css">
+		<link href="../animate-custom.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
-    	<script src="jquery.min.js" type="text/javascript"></script>
-    	<script src="jquery.jribbble-1.0.0.ugly.js" type="text/javascript"></script>
+    	<script src="../jquery.min.js" type="text/javascript"></script>
+    	<script src="../jquery.jribbble-1.0.0.ugly.js" type="text/javascript"></script>
         <script type="text/javascript">
             $(function(){
                 $.ajax({
@@ -35,14 +35,7 @@
                         $(".df").css("visibility", "hidden");
                     }
                 );
-                $(".shot").hover(
-                    function () {
-                        $(this).children("h2").css("display", "block");
-                    }, 
-                    function () {
-                        $(this).children("h2").css("display", "none");
-                    }
-                );
+                
             });
         </script>
 		<!--[if !IE 7]>
@@ -87,35 +80,40 @@
 		<br>
 		<div class="full">
 			<div class="normal" style="text-align:center;">
-				<table style="margin-left:auto; margin-right:auto;">
-        			<tr>
-        				<td>
+				<table>
+                <tr><td>
         					<div id="item">
                                 <a href="waterclock/">
                                     <div class="shot">
-        						    <img src="waterclock/shot.png">
+        						    <img src="shot.png">
                                     <h2 class="overlay"><span>WaterClock</span></h2>
                                     </div>
                                 </a>
         					</div>
         				</td>
         				<td>
-        					<div id="item">
-        						Box2
-        					</div>
+        					WaterCode
         				</td>
         			</tr>
        				<tr>
-        				<td>
-        					<div id="item">
-        						Box1
-        					</div>
+        				<td colspan="2">
+        					 <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'hughezyy'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
         				</td>
-        				<td>
-        					<div id="item">
-        						Box2
-        					</div>
-        				</td>
+        				
         			</tr>
         		</table>
         	</div>

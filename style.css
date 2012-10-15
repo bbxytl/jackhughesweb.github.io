@@ -8,8 +8,9 @@
 }
 #item{
     position: relative;
-	width: 420px;
-	height: 320px;
+	width: 400px;
+	height: 300px;
+    padding:10px;
 	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);	
@@ -134,4 +135,27 @@ span.tooltip:after {
       border-color: transparent transparent #D3D3D3 transparent;
       top: -24px;
       left: 20px;
+}
+.shot{ 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+   display:none;
+}
+h2 span { 
+   color: white; 
+   font: bold 24px/45px; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+h2 span.spacer {
+   padding:0 5px;
 }
