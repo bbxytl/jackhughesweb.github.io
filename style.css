@@ -55,7 +55,12 @@
 td{
     padding:20px;   
 }
-
+.shotinfo{
+    background-color: #D3D3D3;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); 
+    height:210px;
+    padding:10px;
+}
 
 * {margin:0;padding:0;} 
 
