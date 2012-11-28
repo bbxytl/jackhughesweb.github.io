@@ -166,7 +166,7 @@ h2 span.spacer {
 }
 div.cursor {
   display: inline-block;
-  background: #111;
+  background: #FFF;
   margin-left: 1px;
 
   -webkit-animation: blink 2s linear 0s infinite;
@@ -175,43 +175,80 @@ div.cursor {
   -o-animation: blink 2s linear 0s infinite;
 }
 @-webkit-keyframes blink {
-  0%   { background: #0a0 }
-  47%  { background: #090 }
-  50%  { background: #000 }
-  97%  { background: #000 }
-  100% { background: #090 }
+  0%   { background: #FFF; color:#FFF;}
+  1%   { background: #000; color:#000;}
+  50%  { background: #000; color:#000;}
+  51%  { background: #FFF; color:#FFF;}
+  100% { background: #FFF; color:#FFF;}
 }
 
 @-moz-keyframes blink {
-  0%   { background: #0a0 }
-  47%  { background: #090 }
-  50%  { background: #000 }
-  97%  { background: #000 }
-  100% { background: #090 }
+  0%   { background: #FFF; color:#FFF;}
+  1%   { background: #000; color:#000;}
+  50%  { background: #000; color:#000;}
+  51%  { background: #FFF; color:#FFF;}
+  100% { background: #FFF; color:#FFF;}
 }
 
 @-ms-keyframes blink {
-  0%   { background: #0a0 }
-  47%  { background: #090 }
-  50%  { background: #000 }
-  97%  { background: #000 }
-  100% { background: #090 }
+  0%   { background: #FFF; color:#FFF;}
+  1%   { background: #000; color:#000;}
+  50%  { background: #000; color:#000;}
+  51%  { background: #FFF; color:#FFF;}
+  100% { background: #FFF; color:#FFF;}
 }
 
 @-o-keyframes blink {
-  0%   { background: #0a0 }
-  47%  { background: #090 }
-  50%  { background: #000 }
-  97%  { background: #000 }
-  100% { background: #090 }
+  0%   { background: #FFF; color:#FFF;}
+  1%   { background: #000; color:#000;}
+  50%  { background: #000; color:#000;}
+  51%  { background: #FFF; color:#FFF;}
+  100% { background: #FFF; color:#FFF;}
 }
-div.cursor {
-  display: inline-block;
-  background: #111;
-  margin-left: 1px;
-    width:8px;
-  -webkit-animation: blink 2s linear 0s infinite;
-  -moz-animation: blink 2s linear 0s infinite;
-  -ms-animation: blink 2s linear 0s infinite;
-  -o-animation: blink 2s linear 0s infinite;
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+* {margin:0;padding:0;} 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 180px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -180px; /* negative value of footer height */
+	height: 180px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
 }
+
+
+
+/* IMPORTANT
+
+You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.
+
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+
+*/
