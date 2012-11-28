@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Jack Hughes</title>
+		<link href="comingsoon.css" rel="stylesheet" type="text/css">
+		<link href="animate.css" rel="stylesheet" type="text/css">
+		<script src="jquery.min.js" type="text/javascript"></script>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<script>
+  			$(document).ready(function () {
+				setTimeout(function(){
+					$("#item").css('display', 'block').addClass('animated bounceInUp');
+					$("#item").click(function() {
+						$("#item").addClass('animated hinge');
+						setTimeout(function(){
+							$("#item").css('display', 'block').removeClass('hinge').addClass('animated bounceInUp');
+						},2000);
+					});
+				},1500);
+			});
+  		</script>
+	</head>
+	<body>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div>
+		<div id="item">
+		<br>
+		This website is coming soon<br><br>
+		Don't forget to check back later<br><br>
+		<span class="small">~ Jack Hughes</span>
+		</div>
+		</div>
+	</body>
+</html>
