@@ -7,39 +7,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
         <link type="text/css" rel="stylesheet" href="dreamcodes/ribbons/css/tsc_ribbons.css" />
     	<script src="../../jquery.min.js" type="text/javascript"></script>
-    	<script src="../../jquery.jribbble-1.0.0.ugly.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            $(function(){
-                $.ajax({
-                    url: 'http://api.twitter.com/1/users/show.json',
-                    data: {screen_name: 'hughezyy48'},
-                    dataType: 'jsonp',
-                    success: function(data) {
-                        $('.tf').html(data.followers_count);
-                    }
-                });
-                $.jribbble.getPlayerFollowers('hughezyy48', function (followers) {
-                    $('.df').html(followers.total);
-                });
-                $(".twto").hover(
-                    function () {
-                        $(".tf").css("visibility", "visible");
-                    }, 
-                    function () {
-                        $(".tf").css("visibility", "hidden");
-                    }
-                );
-                $(".drto").hover(
-                    function () {
-                        $(".df").css("visibility", "visible");
-                    }, 
-                    function () {
-                        $(".df").css("visibility", "hidden");
-                    }
-                );
-                
-            });
-        </script>
+    	
 		<!--[if !IE 7]>
 			<style type="text/css">
 				#wrap {display:table;height:100%}
@@ -47,65 +15,20 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div id="wrap">
-			<div id="main">
-				<br>
-				<br>
-				<div class="full">
-					<div class="normal">
-						<table width="100%">
-							<tr>
-								<td class="titleBar">
-									Jack Hughes
-								</td>
-								<td class="buttons">
-									<div style="margin-right:auto;">
-										<a href="/contact" class="button">
-    										Contact
-     									</a>
-     									<a href="/portfolio" class="button buttonCurrent">
-											Portfolio
-      									</a>
-      									
-      									<a href="/" class="button">
-											Home
-      									</a>
-									</div>
-								</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-			
-		<br>
-		<div class="full">
-			<div class="normal" style="text-align:center;">
-				<table>
-                <tr><td>
-        					<div id="item">
-                                
-                                    <div class="shot">
-        						    <img src="shot.png">
-                                    
-                                    </div>
-                                
-        					</div>
-        				</td>
-        				<td>
+		
+		
                             
         					            <div class="tsc_ribbon_banner">
                                             <div class="ribbon-banner fold-down lblue"><span>WaterClock</span></div>
                                         </div>
                                         <div class="shotinfo">
-                                            WaterClock was my first project from WaterCode to test out different web technologies - it uses HTML, CSS, Javascript, jQuery and Yahoo! Developer Console - all static content. <br><br>I designed and coded it for iPad, but it works quite well on WebKit browsers (not iPhone, sorry)<br><br>You can view the webapp <a href="http://watercode.github.com/waterclock">here</a> and comment below, it helps :)
+                                            WaterClock was my first project from WaterCode to test out different web technologies - it uses HTML, CSS, Javascript, jQuery and Yahoo! Developer Console - all static content. <br><br>I designed and coded it for iPad, but it works quite well on WebKit browsers (not iPhone, sorry)<br><br>You can view the webapp <a href="javascript:parent.window.location='http://watercode.github.com/waterclock';">here</a> and comment below, it helps :)
                                         </div>
                                     
                             
-        				</td>
-        			</tr>
-       				<tr>
-        				<td colspan="2">
-        					 <div id="disqus_thread"></div>
+        				<br>
+       				
+        					 <div id="disqus_thread shotinfo"></div>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             var disqus_shortname = 'hughezyy'; // required: replace example with your forum shortname
@@ -120,39 +43,7 @@
         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
         
-        				</td>
-        				
-        			</tr>
-        		</table>
-        	</div>
-        </div>
-        </div>
-            </div>
+        			
         
-		<div id="footer">
-			<div class="full">
-				<div class="normal" style="text-align:center;"><br>
-                    <div class="white" style="width:150px;">
-				    	<table style="margin-left:auto; margin-right:auto;">
-                            <tr>
-                                <td style="padding:2px; width:70px; margin-left:auto; margin-right:auto; text-align:center;" class="twto">
-                                    <a href="http://www.twitter.com/hughezyy48">
-						                <img src="http://twitter.com/images/resources/twitter-bird-light-bgs.png" width="60px">
-					                </a>
-                                </td>
-                                <td style="padding:2px; width:70px; margin-left:auto; margin-right:auto; text-align:center;" class="drto">
-					                <a href="http://dribbble.com/hughezyy48">
-						                <img src="http://dribbble.com/images/dribbble-ball-1col-dnld.png" width="40px">
-					                </a>
-                                </td>
-                            </tr>
-                            
-                            
-                        </table><br>
-                        <span style="font-size:90%;">&copy; Jack Hughes 2012</span>
-                    </div>
-				
-			</div>
-		</div>
 	</body>
 </html>
