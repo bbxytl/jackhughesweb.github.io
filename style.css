@@ -17,7 +17,7 @@
 	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);	
-    background-color:#D3D3D3;
+    background-color:#666666;
 }
 #item:before{
 	z-index: -1;
@@ -27,7 +27,7 @@
 	width: 420px;
 	height: 320px;
 	content: '';
-	background-color: #D3D3D3;
+	background-color: #666666;
 	-webkit-transform: rotate(3deg);
 	-moz-transform: rotate(3deg);
 	-o-transform: rotate(3deg);
@@ -67,7 +67,7 @@ margin-top: -118;        /* Size of fixed header */
 	width: 420px;
 	height: 320px;
 	content: '';
-	background-color: #D3D3D3;
+	background-color: #666666;
 	-webkit-transform: rotate(-2deg);
 	-moz-transform: rotate(-2deg);
 	-o-transform: rotate(-2deg);
