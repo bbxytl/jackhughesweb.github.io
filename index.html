@@ -30,6 +30,98 @@
                         $(".tf2").text(data.friends_count);
                     }
                 });
+                function blogAddPostsUpdate(){
+                    var numhid = $('.blogpost:hidden').length;
+                    if(numhid < 1){
+                        $(".blogadd").hide();
+                    } 
+                    if(numhid > 3){
+                        $(".blogadd").text('Load 3 more');
+                    }
+                    if(numhid == 3){
+                        $(".blogadd").text('Load 3 more');
+                    }
+                    if(numhid == 2){
+                        $(".blogadd").text('Load 2 more');
+                    }
+                    if(numhid == 1){
+                        $(".blogadd").text('Load 1 more');
+                    }
+                };
+                 function addZero(i){
+                    if(i<10){
+                        i = "0" + i;
+                    }
+                    return i;
+                };
+                function numToMonth(i){
+                    var month=new Array();
+                    month[1]="January";
+                    month[2]="February";
+                    month[3]="March";
+                    month[4]="April";
+                    month[5]="May";
+                    month[6]="June";
+                    month[7]="July";
+                    month[8]="August";
+                    month[9]="September";
+                    month[10]="October";
+                    month[11]="November";
+                    month[12]="December";
+                    return month[i];
+                };
+                function getTH(i){
+                    switch (i) {
+                        case 1:
+                        case 21:
+                        case 31:
+                            return 'st';
+                        case 2:
+                        case 22:
+                            return 'nd';
+                        case 3:
+                        case 23:
+                            return 'rd';
+                        default:
+                            return 'th';
+                    }
+                };
+                $.getJSON("http://watercodeblog.aws.af.cm",
+                    {
+                       feed: "json"
+                    },
+                    function(data) {
+                       $.each(data, function(i,item){
+                            if(item.author == "Jack Hughes" && item.categories == "Jack Hughes"){
+                                var dateString = item.date;
+                                var year = parseInt(dateString.substr(0, 4), 10),
+                                month = numToMonth(parseInt(dateString.substr(5, 7), 10)),
+                                day = parseInt(dateString.substr(8, 10), 10),
+                                hour = addZero(parseInt(dateString.substr(11, 13), 10)),
+                                minute = addZero(parseInt(dateString.substr(14, 16), 10)),
+                                second = addZero(parseInt(dateString.substr(17, 19), 10));
+                                var dateText = day + "<sup>" + getTH(day) + "</sup> " + month + " " + year + " " + hour + ":" + minute + ":" + second
+                                $('.blogpost').last().after('<div class="blogpost"><div class="blogtitle">' + item.title + '</div><div class="blogdate">' + dateText + '</div><div class="blogtext">' + item.content + '</div>');
+                                 
+                             
+                            }
+                        
+                    });
+                       $('.blogplaceholder').remove();
+                        blogAddPostsUpdate();
+                });
+
+                $(".blogadd").click(function(){
+                    var numvis = $('.blogpost').length - $('.blogpost:hidden').length;
+                    var numhid = $('.blogpost:hidden').length;
+                    if(numhid > 0 && numhid < 4){
+                        $('.blogpost').show();
+                    }
+                    if(numhid > 3){
+                       $('.blogpost').slice(numvis - 1, numvis + 3).show();
+                    }
+                    blogAddPostsUpdate();
+                });
                var successFunc = function(){  
                    $.ajax({
                     url: 'http://api.dribbble.com/players/hughezyy48/',
@@ -80,7 +172,8 @@ $(window).scroll(function () {
     bb = bb.top;
      cc = $('#way3').offset();
     cc = cc.top;
-    
+    dd = $('#way4').offset();
+    dd = dd.top;
    var docViewTop = $(window).scrollTop();
     viewa =  $(this).height() / 2;
     viewa = viewa + docViewTop;
@@ -93,9 +186,13 @@ $(window).scroll(function () {
            $('.buttonCurrent').removeClass('buttonCurrent');
 		    $('.b2').addClass('buttonCurrent');
        } 
-      if (viewa > cc){
+       if ((viewa > cc)&&(viewa < dd)){
            $('.buttonCurrent').removeClass('buttonCurrent');
-		    $('.b3').addClass('buttonCurrent');
+            $('.b3').addClass('buttonCurrent');
+       } 
+      if (viewa > dd){
+           $('.buttonCurrent').removeClass('buttonCurrent');
+		    $('.b4').addClass('buttonCurrent');
        } 
     });
                    
@@ -159,9 +256,12 @@ $(window).scroll(function () {
 								</td>
 								<td class="buttons">
 									<div style="margin-right:auto;">
-										<a href="#way3" class="button2 b3">
+										<a href="#way4" class="button2 b4">
     										Contact
      									</a>
+                                        <a href="#way3" class="button2 b3">
+                                            Blog
+                                        </a>
      									<a href="#way2" class="button2 b2">
 											Portfolio
       									</a>
@@ -213,9 +313,12 @@ $(window).scroll(function () {
        				
         		</table>
                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                   <div class="section">Blog<a id="way3" class="way"></a><br><br><br><div class="blog"><div class="blogpost blogplaceholder"></div> <div class="blogadd">Load 3 more</div></div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+           
         	 <div class="section">
                  Contact
-                     <a id="way3" class="way"></a>
+                     <a id="way4" class="way"></a>
                  
                  <br><br><br>
                 <a href="http://twitter.com/hughezyy48/"> <table class="widget">
