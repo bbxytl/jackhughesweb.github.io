@@ -2,9 +2,28 @@
   width: 100%; }
 
 .normal {
-  width: 1000px;
   margin-left: auto;
   margin-right: auto; }
+  @media screen and (min-width: 1000px) {
+    .normal {
+      width: 1000px; } }
+  @media screen and (max-width: 466px) {
+    .normal {
+      width: 466px; } }
+
+@media screen and (max-width: 466px) {
+  html, body {
+    width: 466px; } }
+
+.brspacer {
+  display: none; }
+  @media screen and (max-width: 466px) {
+    .brspacer {
+      display: none; } }
+
+ul li {
+  display: inline-block;
+  margin: 15px; }
 
 .section {
   margin-top: 100px; }
@@ -35,6 +54,9 @@
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); }
+
+.overlay {
+  text-align: left; }
 
 .widget {
   background: #e0e0e0;
@@ -89,12 +111,15 @@ td {
 
 .shotinfo {
   background-color: #666666;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
-  height: 210px;
+  border-radius: 15px;
   padding: 10px;
   width: 95%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  color: white; }
+
+a {
+  color: #ff8533; }
 
 * {
   margin: 0;
@@ -125,6 +150,18 @@ html, body {
   height: 180px;
   clear: both;
   background-color: #666666; }
+
+.buttons, .titleBar2 {
+  padding: 5px; }
+
+@media screen and (max-width: 600px) {
+  .headbar li {
+    margin: 5px;
+    margin-right: auto;
+    margin-left: auto; } }
+@media screen and (max-width: 600px) {
+  .headbar {
+    text-align: center; } }
 
 /*Opera Fix*/
 body:before {
@@ -386,9 +423,15 @@ You also need to include this conditional style in the <head> of your HTML file 
   width: 600px;
   margin-left: auto;
   margin-right: auto; }
+  @media screen and (max-width: 620px) {
+    .blogpost {
+      width: 95%; } }
 
 .blogpost + .blogpost {
   display: none; }
+
+.headfifty {
+  width: 40%; }
 
 .blogadd {
   cursor: pointer;

@@ -1,6 +1,8 @@
 <html>
 	<head>
         <title>Jack Hughes</title>
+        <meta name=”MobileOptimized” content=”320” />
+        <meta name=”Viewport” content=”width=320; user-scaleable=no; initial-scale=1.0” />
 		<link href="style.css" rel="stylesheet">
 		<link href="animate.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -110,7 +112,7 @@
                        $('.blogplaceholder').remove();
                         blogAddPostsUpdate();
                 });
-
+                blogAddPostsUpdate();
                 $(".blogadd").click(function(){
                     var numvis = $('.blogpost').length - $('.blogpost:hidden').length;
                     var numhid = $('.blogpost:hidden').length;
@@ -249,12 +251,12 @@ $(window).scroll(function () {
 				<br>
 				<div class="full">
 					<div class="normal">
-						<table width="100%">
-							<tr>
+<table width="100%">
+						<tr>
 								<td class="titleBar2">
-									Jack Hughes
-								</td>
-								<td class="buttons">
+									<table><tr><td class="titleBar2">Jack Hughes</td></tr></table>
+								</td><td class="buttons">
+                  
 									<div style="margin-right:auto;">
 										<a href="#way4" class="button2 b4">
     										Contact
@@ -270,6 +272,7 @@ $(window).scroll(function () {
 											Home
       									</a>
 									</div>
+             
 								</td>
 							</tr>
 						</table>
@@ -283,13 +286,12 @@ $(window).scroll(function () {
                 <div class="section">
                      <a id="way1" class="way"></a><span style="font-size:1000%; line-height:50%; font-family: 'Open Sans', sans-serif;">Hi!</span><br><span style="font-size:400%; font-family: 'Kaushan Script', 'Open Sans', sans-serif;">I'm Jack Hughes</span><br><span style="font-size:150%; font-family: 'Kaushan Script', 'Open Sans', sans-serif;">and</span><br><span style="font-size:400%; font-family: 'Kaushan Script', 'Open Sans', sans-serif;">I design &amp; develop</span><br><span style="font-size:200%; font-family: 'Kaushan Script', 'Open Sans', sans-serif;">for the</span><br><span style="font-size:600%; line-height:50%; font-family: 'Kaushan Script';">web</span><br><br><br><br>
                      And that was my first attempt at typography...<br>
-                     Feel free to look around my website, just scroll down
+                     
                 </div>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <a id="way2" class="way"></a>Portfolio<br>
-                <table style="margin-left:auto; margin-right:auto;">
-        			<tr>
-        				<td>
+               <div class="brspacer"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><br>
+            <a id="way2" class="way"></a><h1>Portfolio</h1><br>
+                <ul>
+                  <li>
         					<div id="item">
                                 <a href="shot/waterclock/index.html" class="various fancybox.iframe">
                                     <div class="shot">
@@ -298,8 +300,8 @@ $(window).scroll(function () {
                                     </div>
                                 </a>
         					</div>
-        				</td>
-        				<td>
+        				</li>
+                <li>
         					<div id="item">
                                 <a href="shot/breakfastmod/index.html" class="various fancybox.iframe">
                                     <div class="shot">
@@ -308,16 +310,14 @@ $(window).scroll(function () {
                                     </div>
                                 </a>
         					</div>
-        				</td>
-        			</tr>
-       				
-        		</table>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                   <div class="section">Blog<a id="way3" class="way"></a><br><span style="font-size:60%;">Subscribe via <a href="http://watercodeblog.aws.af.cm/feed">RSS</a> or <a href="http://twitter.com/hughezyy48">Twitter</a></span><br><br><div class="blog"><div class="blogpost blogplaceholder"></div> <div class="blogadd">Load 3 more</div></div>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        				</li>
+              </ul>
+                   <div class="brspacer"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+                   <div class="section"><h1>Blog</h1><a id="way3" class="way"></a><br>Subscribe via <a href="http://watercodeblog.aws.af.cm/feed">RSS</a> or <a href="http://twitter.com/hughezyy48">Twitter</a><br><br><div class="blog"><div class="blogpost blogplaceholder"></div> <div class="blogadd">Load 3 more</div></div>
+               <div class="brspacer"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
            
         	 <div class="section">
-                 Contact
+                 <h1>Contact</h1>
                      <a id="way4" class="way"></a>
                  
                  <br><br><br>
