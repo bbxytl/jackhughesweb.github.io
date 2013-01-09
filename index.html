@@ -106,7 +106,7 @@
                                 var $itemContent = item.content;
                            
                                 $itemContent = $itemContent.replace(new RegExp("\r\n", "g"), '<br>');
-                                alert($itemContent);
+                                
                                 $('.blogpost').last().after('<div class="blogpost"><div class="blogtitle">' + item.title + '</div><div class="blogdate">' + dateText + '</div><div class="blogtext">' + $itemContent + '</div>');
                                  
                              
