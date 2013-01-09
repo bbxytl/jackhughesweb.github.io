@@ -102,8 +102,12 @@
                                 hour = addZero(parseInt(dateString.substr(11, 13), 10)),
                                 minute = addZero(parseInt(dateString.substr(14, 16), 10)),
                                 second = addZero(parseInt(dateString.substr(17, 19), 10));
-                                var dateText = day + "<sup>" + getTH(day) + "</sup> " + month + " " + year + " " + hour + ":" + minute + ":" + second
-                                $('.blogpost').last().after('<div class="blogpost"><div class="blogtitle">' + item.title + '</div><div class="blogdate">' + dateText + '</div><div class="blogtext">' + item.content + '</div>');
+                                var dateText = day + "<sup>" + getTH(day) + "</sup> " + month + " " + year + " " + hour + ":" + minute + ":" + second;
+                                var $itemContent = item.content;
+                           
+                                $itemContent = $itemContent.replace(new RegExp("\r\n", "g"), '<br>');
+                                alert($itemContent);
+                                $('.blogpost').last().after('<div class="blogpost"><div class="blogtitle">' + item.title + '</div><div class="blogdate">' + dateText + '</div><div class="blogtext">' + $itemContent + '</div>');
                                  
                              
                             }
