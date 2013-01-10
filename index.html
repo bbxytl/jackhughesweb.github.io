@@ -1,8 +1,8 @@
 <html>
 	<head>
         <title>Jack Hughes</title>
-        <meta name=”MobileOptimized” content=”320” />
-        <meta name=”Viewport” content=”width=320; user-scaleable=no; initial-scale=1.0” />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="Viewport" content="width=320; user-scaleable=no; initial-scale=1.0" />
 		<link href="style.css" rel="stylesheet">
 		<link href="animate.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -171,8 +171,7 @@
                 
                 // Register each section as a waypoint.
 $(window).scroll(function () { 
-    aa = $('#home').offset();
-    aa = aa.top;
+   
     
      bb = $('#portfolio').offset();
     bb = bb.top;
@@ -184,11 +183,8 @@ $(window).scroll(function () {
     viewa =  $(this).height() / 2;
     viewa = viewa + docViewTop;
     
-       if (viewa < bb){
-           $('.buttonCurrent').removeClass('buttonCurrent');
-		    $('.b1').addClass('buttonCurrent');
-       } 
-        if ((viewa > bb)&&(viewa < cc)){
+    
+        if (viewa < cc){
            $('.buttonCurrent').removeClass('buttonCurrent');
 		    $('.b2').addClass('buttonCurrent');
        } 
@@ -272,9 +268,7 @@ $(window).scroll(function () {
 											Portfolio
       									</a>
       									
-      									<a href="#home" class="button2 buttonCurrent b1">
-											Home
-      									</a>
+      									
 									</div>
              
 								</td>
@@ -287,12 +281,7 @@ $(window).scroll(function () {
 		<div class="full" style="padding-top:118px;">
             
 			<div class="normal" style="text-align:center;">
-                <div class="section">
-                     <a id="home" class="way"></a><span style="font-size:1000%; line-height:50%; font-family: 'Open Sans', sans-serif;">Hi!</span><br><span style="font-size:400%; font-family: 'Kaushan Script', 'Open Sans', sans-serif;">I'm Jack Hughes</span><br><span style="font-size:150%; font-family: 'Kaushan Script', 'Open Sans', sans-serif;">and</span><br><span style="font-size:400%; font-family: 'Kaushan Script', 'Open Sans', sans-serif;">I design &amp; develop</span><br><span style="font-size:200%; font-family: 'Kaushan Script', 'Open Sans', sans-serif;">for the</span><br><span style="font-size:600%; line-height:50%; font-family: 'Kaushan Script';">web</span><br><br><br><br>
-                     And that was my first attempt at typography...<br>
-                     
-                </div>
-               <div class="brspacer"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><br>
+              
             <a id="portfolio" class="way"></a><h1>Portfolio</h1><br>
                 <ul>
                   <li>
