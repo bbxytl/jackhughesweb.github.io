@@ -1,351 +1,53 @@
-<html>
-	<head>
-        <title>Jack Hughes</title>
-        <meta name="MobileOptimized" content="320" />
-        <meta name="Viewport" content="width=320; user-scaleable=no; initial-scale=1.0" />
-		<link href="style.css" rel="stylesheet">
-		<link href="animate.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-             <script src="jquery.min.js"></script>
-        <!-- Add fancyBox -->
-<link rel="stylesheet" href="jquery.fancybox.css?v=2.1.3" media="screen" />
-<script src="jquery.fancybox.pack.js?v=2.1.3"></script>
-
-<!-- Optionally add helpers - button, thumbnail and/or media -->
-<link rel="stylesheet" href="helpers/jquery.fancybox-buttons.css?v=1.0.5" media="screen" />
-<script src="helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-<script src="helpers/jquery.fancybox-media.js?v=1.0.5"></script>
-
-<link rel="stylesheet" href="helpers/jquery.fancybox-thumbs.css?v=1.0.7" media="screen" />
-<script src="helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-   
-        <script src="waypoints.min.js" ></script>
-        <script>
-            $(function(){
-                $.ajax({
-                    url: 'http://api.twitter.com/1/users/show.json',
-                    data: {screen_name: 'hughezyy48'},
-                    dataType: 'jsonp',
-                    success: function(data) {
-                        $(".tf").text(data.followers_count);
-                        $(".tf2").text(data.friends_count);
-                    }
-                });
-                function blogAddPostsUpdate(){
-                    var numhid = $('.blogpost:hidden').length;
-                    if(numhid < 1){
-                        $(".blogadd").hide();
-                    } 
-                    if(numhid > 3){
-                        $(".blogadd").text('Load 3 more');
-                    }
-                    if(numhid == 3){
-                        $(".blogadd").text('Load 3 more');
-                    }
-                    if(numhid == 2){
-                        $(".blogadd").text('Load 2 more');
-                    }
-                    if(numhid == 1){
-                        $(".blogadd").text('Load 1 more');
-                    }
-                };
-                 function addZero(i){
-                    if(i<10){
-                        i = "0" + i;
-                    }
-                    return i;
-                };
-                function numToMonth(i){
-                    var month=new Array();
-                    month[1]="January";
-                    month[2]="February";
-                    month[3]="March";
-                    month[4]="April";
-                    month[5]="May";
-                    month[6]="June";
-                    month[7]="July";
-                    month[8]="August";
-                    month[9]="September";
-                    month[10]="October";
-                    month[11]="November";
-                    month[12]="December";
-                    return month[i];
-                };
-                function getTH(i){
-                    switch (i) {
-                        case 1:
-                        case 21:
-                        case 31:
-                            return 'st';
-                        case 2:
-                        case 22:
-                            return 'nd';
-                        case 3:
-                        case 23:
-                            return 'rd';
-                        default:
-                            return 'th';
-                    }
-                };
-                $.getJSON("http://watercodeblog.aws.af.cm",
-                    {
-                       feed: "json"
-                    },
-                    function(data) {
-                       $.each(data, function(i,item){
-                            if(item.author == "Jack Hughes" && item.categories == "Jack Hughes"){
-                                var dateString = item.date;
-                                var year = parseInt(dateString.substr(0, 4), 10),
-                                month = numToMonth(parseInt(dateString.substr(5, 7), 10)),
-                                day = parseInt(dateString.substr(8, 10), 10),
-                                hour = addZero(parseInt(dateString.substr(11, 13), 10)),
-                                minute = addZero(parseInt(dateString.substr(14, 16), 10)),
-                                second = addZero(parseInt(dateString.substr(17, 19), 10));
-                                var dateText = day + "<sup>" + getTH(day) + "</sup> " + month + " " + year + " " + hour + ":" + minute + ":" + second;
-                                var $itemContent = item.content;
-                           
-                                $itemContent = $itemContent.replace(new RegExp("\r\n", "g"), '<br>');
-                                
-                                $('.blogpost').last().after('<div class="blogpost"><div class="blogtitle">' + item.title + '</div><div class="blogdate">' + dateText + '</div><div class="blogtext">' + $itemContent + '</div>');
-                                 
-                             
-                            }
-                        
-                    });
-                       $('.blogplaceholder').remove();
-                        blogAddPostsUpdate();
-                });
-                blogAddPostsUpdate();
-                $(".blogadd").click(function(){
-                    var numvis = $('.blogpost').length - $('.blogpost:hidden').length;
-                    var numhid = $('.blogpost:hidden').length;
-                    if(numhid > 0 && numhid < 4){
-                        $('.blogpost').show();
-                    }
-                    if(numhid > 3){
-                       $('.blogpost').slice(numvis - 1, numvis + 3).show();
-                    }
-                    blogAddPostsUpdate();
-                });
-               var successFunc = function(){  
-                   $.ajax({
-                    url: 'http://api.dribbble.com/players/hughezyy48/',
-                    dataType: 'jsonp',
-                       
-                    success: function(data) {
-                        $(".df").text(data.followers_count);
-                        $(".ds").text(data.shots_count);
-                        $(".v1").hide();
-                        $(".v2").show();
-                    }
-                }); 
-                                           };
-                var drib = $.ajax({
-                    url: 'http://api.dribbble.com/players/hughezyy48/',
-                    
-                    dataType: 'jsonp',
-                    
-                   
-                    error: function() {
-                       $(".di").text('Not invited');
-                    },
-                    success: successFunc
-                });
-                
-                setTimeout(function(){
-                    drib.abort();
-                        successFunc;
-                }, 500);
-                
-                $(".shot").hover(
-                    function () {
-                        $(this).children("h2").css("display", "block");
-                    }, 
-                    function () {
-                        $(this).children("h2").css("display", "none");
-                    }
-                );
-               
-                    //$(".buttonCurrent").removeClass("buttonCurrent");
-                
-                // Register each section as a waypoint.
-$(window).scroll(function () { 
-   
-    
-     bb = $('#portfolio').offset();
-    bb = bb.top;
-     cc = $('#blog').offset();
-    cc = cc.top;
-    dd = $('#contact').offset();
-    dd = dd.top;
-   var docViewTop = $(window).scrollTop();
-    viewa =  $(this).height() / 2;
-    viewa = viewa + docViewTop;
-    
-    
-        if (viewa < cc){
-           $('.buttonCurrent').removeClass('buttonCurrent');
-		    $('.b2').addClass('buttonCurrent');
-       } 
-       if ((viewa > cc)&&(viewa < dd)){
-           $('.buttonCurrent').removeClass('buttonCurrent');
-            $('.b3').addClass('buttonCurrent');
-       } 
-      if (viewa > dd){
-           $('.buttonCurrent').removeClass('buttonCurrent');
-		    $('.b4').addClass('buttonCurrent');
-       } 
-    });
-                   
-		
-		
-		 
-	
-	           
-                // Smooth scrolling for internal links
-	$("a[href^='#']").click(function(event) {
-		event.preventDefault();
-		
-		var $this = $(this),
-		target = this.hash,
-		$target = $(target);
-		$offset = $target.offset().top - 118;
-       
-		$('body').stop().animate({
-			'scrollTop': $offset
-		}, 500, function() {
-			
-		});
-		
-	});
-                
-             $(".various").fancybox({
-		maxWidth	: 800,
-		maxHeight	: 600,
-		fitToView	: false,
-		width		: '70%',
-		height		: '70%',
-        scrolling   : 'no',
-		autoSize	: false,
-		closeClick	: false,
-		openEffect	: 'none',
-		closeEffect	: 'none'
-	});
-                // The same for all waypoints
-
-
-            });
-        </script>
-		<!--[if !IE 7]>
-			<style type="text/css">
-				#wrap {display:table;height:100%}
-			</style>
-		<![endif]-->
-	</head>
-	<body>
-		<div id="wrap">
-			<div id="main">
-                <div class="dark">
-				<br>
-				<br>
-				<div class="full">
-					<div class="normal">
-<table width="100%">
-						<tr>
-								<td class="titleBar2">
-									<table><tr><td class="titleBar2">Jack Hughes</td></tr></table>
-								</td><td class="buttons">
-                  
-									<div style="margin-right:auto;">
-										<a href="#contact" class="button2 b4">
-    										Contact
-     									</a>
-                                        <a href="#blog" class="button2 b3">
-                                            Blog
-                                        </a>
-     									<a href="#portfolio" class="button2 b2 buttonCurrent">
-											Portfolio
-      									</a>
-      									
-      									
-									</div>
-             
-								</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-			</div>
-		<br>
-		<div class="full" style="padding-top:118px;">
-            
-			<div class="normal" style="text-align:center;">
-              
-            <a id="portfolio" class="way"></a><h1>Portfolio</h1><br>
-                <ul>
-                  <li>
-        					<div id="item">
-                                <a href="shot/waterclock/index.html" class="various fancybox.iframe">
-                                    <div class="shot">
-        						    <img src="shot/waterclock/shot.png">
-                                    <h2 class="overlay"><span>WaterClock</span></h2>
-                                    </div>
-                                </a>
-        					</div>
-        				</li>
-                <li>
-        					<div id="item">
-                                <a href="shot/breakfastmod/index.html" class="various fancybox.iframe">
-                                    <div class="shot">
-            					    <img src="shot/breakfastmod/shot.png">
-                                    <h2 class="overlay"><span>BreakfastMod</span></h2>
-                                    </div>
-                                </a>
-        					</div>
-        				</li>
-              </ul>
-                   <div class="brspacer"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
-                   <div class="section"><h1>Blog</h1><a id="blog" class="way"></a><br>Subscribe via <a href="http://watercodeblog.aws.af.cm/feed">RSS</a> or <a href="http://twitter.com/hughezyy48">Twitter</a><br><br><div class="blog"><div class="blogpost blogplaceholder"></div> <div class="blogadd">Load 3 more</div></div>
-               <div class="brspacer"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
-           
-        	 <div class="section">
-                 <h1>Contact</h1>
-                     <a id="contact" class="way"></a>
-                 
-                 <br><br><br>
-                <a href="http://twitter.com/hughezyy48/"> <table class="widget">
-                     <tr><td style="background-image:url(twitter.png); background-size: 50px;  background-position: center center; background-repeat:no-repeat;"></td><td style="text-align:left; padding:10px; padding-left:5px;" colspan="2">@Hughezyy48</td></tr>
-                 <tr><td></td><td style="text-align:center; padding-top: 5px; padding-bottom: 5px;"><strong><span class="tf"></span></strong><br>followers</td><td style="text-align:center; padding-top: 5px; padding-bottom: 5px;"><strong><span class="tf2"></span></strong><br>following</td></tr>
-                 </table></a>
-                 <br><br><br><br><br><br>
-                  <a href="http://dribbble.com/hughezyy48/">  <table class="widget">
-                     <tr><td style="background-image:url(dribbble.png); background-size: 50px;  background-position: center center; background-repeat:no-repeat;"></td><td style="text-align:left; padding:10px; padding-left:5px;" colspan="2">Hughezyy48</td></tr>
-                 <tr class="v2" style="display:none;"><td></td><td style="text-align:center; padding-top: 5px; padding-bottom: 5px;"><strong><span class="df"></span></strong><br>followers</td><td style="text-align:center; padding-top: 5px; padding-bottom: 5px;"><strong><span class="ds"></span></strong><br>shots</td></tr>
-                 <tr class="v1"><td></td><td style="text-align:center; padding-top: 5px; padding-bottom: 5px;" colspan="2">Send me an invite</td></tr>
-                 </table></a>
-                 
-                <br><br><br><br><br>
-                </div>
-            </div>
-        </div>
-        </div>
-            
-            </div>
-		<div id="footer">
-			<div class="full">
-				<div class="normal" style="text-align:center;"><br>
-                    <div class="white" style="width:150px;">
-				    	
-                            
-                                                       
-                        
-                        <span style="font-size:90%;">&copy; Jack Hughes 2013</span>
-                    
-				</div>
-			</div>
-		</div>
-        
-	</body>
+<!DOCTYPE html>
+   <head>
+      <title>Jack Hughes</title>
+      <link href="style.css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width">
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+   </head>
+   <body class="index">
+      <header>
+      </header>
+      <div class="card">
+         <h1>
+           Jack Hughes
+         </h1>
+         <span class="sub sub2">
+           Web designer &amp; developer
+         </span>
+         <br>
+         <br>
+         <table class="social">
+            <tr class="icons">
+               <td class="t">
+                  <a href="http://twitter.com/hughezyy48"></a>
+               </td>
+               <td class="d">
+                  <a href="http://dribbble.com/hughezyy48"></a>
+               </td>
+               <td class="g">
+                  <a href="http://github.com/hughezyy"></a>
+               </td>
+            </tr>
+         </table>
+         <br>
+         <a href="portfolio">
+         <span class="button portfolio">
+            <i class="icon-folder"></i><span>Portfolio</span>
+         </span>
+         </a>
+         <a href="blog">
+         <span class="button blog">
+            <i class="icon-rss"></i><span>Blog</span>
+         </span>
+         </a>
+         <a href="contact">
+         <span class="button email">
+            <i class="icon-email"></i><span>Contact Me</span>
+         </span>
+         </a>
+      </div>
+   </body>
   <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -359,4 +61,7 @@ $(window).scroll(function () {
   })();
 
 </script>
+   <script src="jquery.min.js"></script>
+   <script src="modernizr.js"></script>
+   <script src="index.js"></script>
 </html>
