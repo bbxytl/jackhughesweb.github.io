@@ -46,7 +46,7 @@
                             var url = "";
                         }else{
                             var icon = "icon-link";
-                            var url = "<a href='" + post.meta.url + "'>Visit link &rarr;</a>";
+                            var url = "<a href='" + post.meta.url + "' style='margin-left: 1em; background-color: white; color: #3498db; text-decoration: none; padding: 0.5em; border-radius: 0.5em;'>Visit link &rarr;</a>";
                         }
                         if(datalikes.liked == 'false'){
                             $(".posts").append("<div class='post' data-id='" + post.id + "'><div class='header " + icon + "'><div class='narrow'><h3>" + post.title + url + "</h3>" + post.date + "</div></div><div class='content'><div class='narrow'>" + post.content + "</div></div></div><br><div class='narrow likebarpadding'><span class='valignmiddle'><span class='numlikes'>" + datalikes.likes + "</span> likes </span><span class='smallbuttons'><span class='button likethisbutton'>Like</span><span class='button dislikethisbutton' style='display: none;'>Dislike</span></span><span class='container'><span class='fullwidth'><span class='likethis button'>Slide to like &rarr;</span><span class='dislikethis button' style='display: none;'>Slide to dislike &rarr;</span></span></span><span class='likemessage'></span></div>");
