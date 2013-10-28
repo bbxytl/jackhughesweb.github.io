@@ -1,0 +1,15 @@
+---
+layout: default
+title: Portfolio
+nav: portfolio
+---
+
+<div id="portfolio" class="portfolio">
+    {% for work in site.tags.work %}
+      <a href="{{ work.url }}">
+        <span>{{ work.title }}</span>
+        <br>
+        <small>{{ work.subtitle }}</small>
+      </a>
+    {% endfor %}
+</div>

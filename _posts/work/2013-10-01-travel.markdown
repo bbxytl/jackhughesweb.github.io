@@ -1,0 +1,16 @@
+---
+layout: work
+title:  "Travel"
+subtitle: "Icon design"
+date:   2013-10-01
+permalink: /portfolio/travel/
+tags:
+- work
+work: true
+---
+
+![Travel Icon](/img/work/travel.png)
+
+An essential part of travelling is the experience of moving from A to B and this icon captures this idea by displaying a simple path on a map.
+
+This icon is a concept and has not been used in an app.

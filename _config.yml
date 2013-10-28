@@ -1,0 +1,4 @@
+name: Jack Hughes
+markdown: redcarpet
+pygments: true
+permalink: /blog/:title

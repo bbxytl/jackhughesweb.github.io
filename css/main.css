@@ -1,0 +1,197 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{ 
+  height: 100%;
+}
+
+body{
+  background-color: #FFF;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+h1{ 
+  font-size: 2em;
+}
+
+p{ 
+  margin: 1em 0;
+}
+
+a{ 
+  color: #3498db;
+}
+a:hover{ 
+  color: #72BCED; 
+}
+a:visited{ 
+  color: #3498db; 
+}
+
+/* Prevent IE from placing a border around image links */
+a img{
+  border: none;
+}
+
+/*****************************************************************************/
+/*
+/* Custom
+/*
+/*****************************************************************************/
+
+header{
+  background-color: #2980b9;
+  color: #ffffff;
+}
+
+header *{
+  color: #ffffff;
+  vertical-align: middle;
+}
+
+header a{
+  display: inline-block;
+  height: 100%;
+  padding: 0.5em;
+  margin-right: 5px;
+  background-color: #3498db;
+  text-decoration: none;
+}
+
+header a:hover, header a.current{
+  background-color: #72BCED;
+}
+
+header a span{
+  margin-left: 5px;
+  display: none;
+}
+
+@media screen and (min-width: 36em) {
+  header a span{
+    display: inline;
+  }
+}
+
+div.container{
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.container.content, div.title-bar div.container{
+  padding: 1rem;
+}
+
+div.title-bar{
+  background-color: #72BCED;
+  color: white;
+}
+
+/* Arrow */
+
+span.arrow-right{
+  background-image: url('/img/arrow-right.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1em;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  vertical-align: baseline;
+}
+
+/* Blog and Work list */
+div.blog a, div.portfolio a, div.labs a{
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #3498db;
+  background-image: url('/img/arrow-right.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 1em;
+  padding-right: 1em;
+}
+
+div.blog a:hover, div.portfolio a:hover, div.labs a:hover{
+  border-bottom: 1px solid #72BCED;
+  background-image: url('/img/arrow-right-light.png');
+}
+
+div.blog a span, div.portfolio a span, div.labs a span{
+  color: #3498db;
+  font-size: 1.2em;
+}
+
+div.blog a:hover span, div.portfolio a:hover span, div.labs a:hover span{
+  color: #72BCED;
+}
+
+div.blog, div.portfolio, div.labs{
+  font-size: 1.2em;
+}
+
+div.post p{
+  line-height: 1.6;
+}
+
+/* Make post images responsive */
+
+div.post img{
+  max-width: 100%;
+}
+
+/* Homepage styling */
+
+div.home img.logo{
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (min-width: 36em) {
+  div.home img.logo{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  div.home img.logo{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 23em) {
+  div.home img.logo{
+    float: right;
+  }
+}
+
+div.home p.about-heading{
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+div.home p.about-text{
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 36em) {
+  p.mobile{
+    display: none;
+  }
+}
