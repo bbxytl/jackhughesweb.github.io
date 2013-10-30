@@ -7,6 +7,32 @@ nav: about
 <div id="home" class="home">
   <img src="/img/logo.png" alt="JH" class="logo">
   <p class="about-heading"><span class="mobile">Hi, I'm Jack and </span>I'm a front-end web designer and developer from Worcester, UK</p>
-  <p class="about-text">You can find me tweeting about web development on <a href="http://twitter.com/jackhughesweb">Twitter</a>, writing code on <a href="http://github.com/jackhughesweb">GitHub</a>, sharing photos on <a href="http://500px.com/jackhughesweb">500px</a> and watching videos on <a href="http://vimeo.com/jackhughesweb">Vimeo</a>.</p>
-  <p class="about-text">Feel free to send me a Tweet or email me at <a href="mailto:jack@jackhughesweb.com">jack@jackhughesweb.com</a>
+  <p class="about-text about-splitter">You can find me tweeting about web development on <a href="http://twitter.com/jackhughesweb">Twitter</a>, writing code on <a href="http://github.com/jackhughesweb">GitHub</a>, sharing photos on <a href="http://500px.com/jackhughesweb">500px</a> and watching videos on <a href="http://vimeo.com/jackhughesweb">Vimeo</a>.</p>
+  <p class="about-subheading">Recent work</p>
+  {% for work in site.tags.work limit: 3 %}
+  <a href="{{ work.url }}" class="work">
+    <p class="about-text work">
+      <img src="{{ work.hero }}" alt="{{ work.title }} image" class="work">
+      <span>
+        <span class="work-title">{{ work.title }}</span>
+        <br>
+        <small class="work-subtitle">{{ work.subtitle }}</small>
+      </span>
+    </p>
+  </a>
+  {% endfor %}
+  <p class="about-subheading">Recent blog posts</p>
+  {% for post in site.tags.blog limit: 3 %}
+  <a href="{{ post.url }}" class="post">
+    <p class="about-text post">
+      <span>
+        <span class="post-title">{{ post.title }}</span>
+        <br>
+        <small class="post-subtitle">{{ post.date | date: "%-d %B, %Y" }}</small>
+      </span>
+    </p>
+  </a>
+  {% endfor %}
+  <p class="about-subheading">Contact me</p>
+  <p class="about-text">If you have any questions you would like to ask or you'd just like to say hello, Tweet me <a href="http://twitter.com/jackhughesweb">@jackhughesweb</a> or send an email to <a href="mailto:jack@jackhughesweb.com">jack@jackhughesweb.com</a>.</p>
 </div>

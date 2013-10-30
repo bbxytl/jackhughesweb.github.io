@@ -8,6 +8,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body{ 
@@ -170,8 +171,8 @@ div.home img.logo{
 
 @media screen and (min-width: 40em) {
   div.home img.logo{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 }
 
@@ -186,8 +187,115 @@ div.home p.about-heading{
   font-weight: bold;
 }
 
+div.home p.about-subheading{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 div.home p.about-text{
   font-size: 1.2em;
+}
+
+div.home img.work{
+  width: 100%;
+  padding-bottom: 0.5em;
+}
+
+div.home a.work{
+  display: inline-block;
+  max-width: 14em;
+}
+
+div.home p.work{
+  margin: 0;
+}
+
+div.home a.work{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-right: 1em;
+  border-bottom: 1px solid #3498db;
+}
+
+div.home a.work p > span{
+  background-image: url(/img/arrow-right.png);
+  background-position: center right;
+  background-size: 1em;
+  background-repeat: no-repeat;
+  color: black;
+  text-decoration: none;
+  padding-right: 2em;
+  display: inline-block;
+  width: 100%;
+}
+
+div.home a.work:hover p > span{
+  background-image: url(/img/arrow-right-light.png);
+}
+
+div.home p.work{
+  display: table;
+}
+
+div.home p.work span.work-title{
+  font-size: 1.2em;
+  color: #3498db;
+}
+
+div.home a.work:hover span.work-title{
+  color: #72BCED;
+}
+
+div.home a.work:hover{
+  border-bottom: 1px solid #72BCED;
+}
+
+div.home a.post{
+  display: block;
+  max-width: 100%
+}
+
+div.home p.post{
+  margin: 0;
+}
+
+div.home a.post{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-right: 1em;
+  border-bottom: 1px solid #3498db;
+}
+
+div.home a.post p > span{
+  background-image: url(/img/arrow-right.png);
+  background-position: center right;
+  background-size: 1em;
+  background-repeat: no-repeat;
+  padding-right: 2em;
+  display: block;
+  width: 100%;
+}
+
+div.home a.post{
+  color: black;
+  text-decoration: none;
+}
+
+div.home a.post:hover p > span{
+  background-image: url(/img/arrow-right-light.png);
+}
+
+div.home p.post span.post-title{
+  font-size: 1.2em;
+  color: #3498db;
+}
+
+div.home a.post:hover span.post-title{
+  color: #72BCED;
+}
+
+div.home a.post:hover{
+  border-bottom: 1px solid #72BCED;
 }
 
 @media screen and (min-width: 36em) {

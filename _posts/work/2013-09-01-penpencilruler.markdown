@@ -7,6 +7,7 @@ permalink: /portfolio/penpencilruler/
 tags:
 - work
 work: true
+hero: "/img/work/penpencilruler-hero.png"
 ---
 
 **Update: Pen Pencil Ruler is no longer active and the source code can be found on [GitHub](http://github.com/jackhughesweb/penpencilruler)**
