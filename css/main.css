@@ -195,3 +195,49 @@ div.home p.about-text{
     display: none;
   }
 }
+
+/* Design box */
+p.design-box{
+  display: inline-block;
+}
+
+p.design-box span.colour{
+  width: 5em;
+  height: 5em;
+  padding: 0.4em;
+  display: inline-block;
+  color: #000000;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+p.design-box span.colour:first-child{
+  border-radius: 0.5em 0 0 0.5em;
+}
+
+p.design-box span.colour:last-child{
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+p.design-box span.colour.colour-2d83a5{
+  background-color: #2d83a5;
+}
+
+p.design-box span.colour.colour-2d8f3a{
+  background-color: #2d8f3a;
+}
+
+p.design-box span.colour.colour-ffffff{
+  background-color: #ffffff;
+}
+
+p.design-box span.colour.colour-c11c22{
+  background-color: #c11c22;
+}
+
+p.design-box span.colour.colour-715a4a{
+  background-color: #715a4a;
+}
+
+p.design-box span.colour.colour-fbf032{
+  background-color: #fbf032;
+}
