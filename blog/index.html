@@ -6,10 +6,10 @@ nav: blog
 
 <div id="blog" class="blog">
     {% for post in site.tags.blog %}
-      <a href="{{ post.url }}">
+      <a href="{{ post.medium || post.url }}">
         <span>{{ post.title }}</span>
         <br>
-        <small>{{ post.date | date: "%-d %B, %Y" }}</small>
+        <small>{{ post.date | date: "%-d %B, %Y" }}{{ post.mediumText }}</small>
       </a>
     {% endfor %}
 </div>
