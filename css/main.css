@@ -145,8 +145,25 @@ div.blog, div.portfolio, div.labs{
   font-size: 1.2em;
 }
 
+div.post-blog{
+    font-size: 1em;
+  }
+
+@media screen and (min-width: 20em) {
+  div.post-blog{
+    font-size: 1.3em;
+  }
+}
+
+
 div.post p{
-  line-height: 1.6;
+  line-height: 1.5;
+}
+
+div.post-blog hr{
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Make post images responsive */

@@ -23,12 +23,12 @@ nav: about
   {% endfor %}
   <p class="about-subheading">Recent blog posts</p>
   {% for post in site.tags.blog limit: 3 %}
-  <a href="{{ post.medium || post.url }}" class="post">
+  <a href="{{ post.url }}" class="post">
     <p class="about-text post">
       <span>
         <span class="post-title">{{ post.title }}</span>
         <br>
-        <small class="post-subtitle">{{ post.date | date: "%-d %B, %Y" }}{{ post.mediumText }}</small>
+        <small class="post-subtitle">{{ post.date | date: "%-d %B, %Y" }}</small>
       </span>
     </p>
   </a>

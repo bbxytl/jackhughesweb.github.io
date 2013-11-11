@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title:  "The Current Status of PenPencilRuler.com"
 date:   2013-10-08
 permalink: /blog/penpencilruler-status/
