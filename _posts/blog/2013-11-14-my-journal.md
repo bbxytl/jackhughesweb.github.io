@@ -1,7 +1,7 @@
 ---
 layout: blogpost
 title:  "Journalling"
-date:   2013-11-03
+date:   2013-12-02
 permalink: /blog/journal/
 tags:
 - blog
