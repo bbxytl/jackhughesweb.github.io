@@ -1,6 +1,6 @@
 ---
 layout: blogpost
-title:  "Journalling"
+title:  "Journaling"
 date:   2013-12-02
 permalink: /blog/journal/
 tags:
