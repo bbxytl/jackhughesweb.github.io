@@ -168,6 +168,9 @@ div.post-blog hr{
   width: 20%;
   margin-left: auto;
   margin-right: auto;
+  border: 0;
+  height: 1px;
+  background: #333;
 }
 
 /* Make post images responsive */
