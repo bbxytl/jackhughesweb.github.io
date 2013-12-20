@@ -8,6 +8,13 @@
     
         <meta property="twitter:account_id" content="1512910730" />
 
+        {% if page.redirecturl %}
+        <noscript>
+          <meta http-equiv="refresh" content="0;URL={{ page.redirecturl }}">
+        </noscript>
+        <script>location.replace("{{ page.redirecturl }}")</script>
+        {% endif %}
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
@@ -34,15 +41,10 @@
             {% else %}
                 <a href="/blog"><img src="/img/blog.png" width="30" height="30"><span>Blog</span></a>
             {% endif %}
-            {% if page.nav == "portfolio" %}
-                <a href="/portfolio" class="current"><img src="/img/portfolio.png" width="30" height="30"><span>Portfolio</span></a>
+            {% if page.nav == "projects" %}
+                <a href="/projects" class="current"><img src="/img/projects.png" width="30" height="30"><span>Projects</span></a>
             {% else %}
-                <a href="/portfolio"><img src="/img/portfolio.png" width="30" height="30"><span>Portfolio</span></a>
-            {% endif %}
-            {% if page.nav == "labs" %}
-                <a href="/labs" class="current"><img src="/img/labs.png" width="30" height="30"><span>Labs</span></a>
-            {% else %}
-                <a href="/labs"><img src="/img/labs.png" width="30" height="30"><span>Labs</span></a>
+                <a href="/projects"><img src="/img/projects.png" width="30" height="30"><span>Projects</span></a>
             {% endif %}
           </div>
         </header>
@@ -77,5 +79,6 @@
         ga('send', 'pageview');
 
       </script>
+      <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     </body>
 </html>

@@ -1,0 +1,14 @@
+---
+layout: project
+title:  "list.css"
+subtitle: "Different types of list in one stylesheet"
+date:   2013-09-02
+permalink: /projects/list.css/
+tags:
+- project
+work: true
+redirecturl: "https://github.com/jackhughesweb/list.css"
+---
+
+
+

@@ -1,0 +1,14 @@
+---
+layout: project
+title:  "game-off-2013"
+subtitle: "My entry for GitHub's Game Off 2013 competition"
+date:   2013-09-03
+permalink: /projects/list.css/
+tags:
+- project
+work: true
+redirecturl: "https://github.com/jackhughesweb/list.css"
+---
+
+
+

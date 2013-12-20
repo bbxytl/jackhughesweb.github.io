@@ -60,6 +60,10 @@ header *{
   vertical-align: middle;
 }
 
+header > div.container{
+  padding: 0 1rem;
+}
+
 header a{
   display: inline-block;
   height: 100%;
@@ -113,7 +117,7 @@ span.arrow-right{
 }
 
 /* Blog and Work list */
-div.blog a, div.portfolio a, div.labs a{
+div.blog a, div.projects a, div.labs a{
   color: black;
   text-decoration: none;
   display: block;
@@ -127,21 +131,21 @@ div.blog a, div.portfolio a, div.labs a{
   padding-right: 1em;
 }
 
-div.blog a:hover, div.portfolio a:hover, div.labs a:hover{
+div.blog a:hover, div.projects a:hover, div.labs a:hover{
   border-bottom: 1px solid #72BCED;
   background-image: url('/img/arrow-right-light.png');
 }
 
-div.blog a span, div.portfolio a span, div.labs a span{
+div.blog a span, div.projects a span, div.labs a span{
   color: #3498db;
   font-size: 1.2em;
 }
 
-div.blog a:hover span, div.portfolio a:hover span, div.labs a:hover span{
+div.blog a:hover span, div.projects a:hover span, div.labs a:hover span{
   color: #72BCED;
 }
 
-div.blog, div.portfolio, div.labs{
+div.blog, div.projects, div.labs{
   font-size: 1.2em;
 }
 
@@ -213,28 +217,31 @@ div.home p.about-text{
   font-size: 1.2em;
 }
 
-div.home img.work{
+div.home img.project{
   width: 100%;
   padding-bottom: 0.5em;
 }
 
-div.home a.work{
+div.home a.project{
   display: inline-block;
-  max-width: 14em;
+  max-width: 100%;
+  text-decoration: none;
+  color: black;
 }
 
-div.home p.work{
+div.home p.project{
   margin: 0;
 }
 
-div.home a.work{
+div.home a.project{
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-right: 1em;
   border-bottom: 1px solid #3498db;
+  display: block;
 }
 
-div.home a.work p > span{
+div.home a.project p > span{
   background-image: url(/img/arrow-right.png);
   background-position: center right;
   background-size: 1em;
@@ -242,28 +249,24 @@ div.home a.work p > span{
   color: black;
   text-decoration: none;
   padding-right: 2em;
-  display: inline-block;
+  display: block;
   width: 100%;
 }
 
-div.home a.work:hover p > span{
+div.home a.project:hover p > span{
   background-image: url(/img/arrow-right-light.png);
 }
 
-div.home p.work{
-  display: table;
-}
-
-div.home p.work span.work-title{
+div.home p.project span.project-title{
   font-size: 1.2em;
   color: #3498db;
 }
 
-div.home a.work:hover span.work-title{
+div.home a.project:hover span.project-title{
   color: #72BCED;
 }
 
-div.home a.work:hover{
+div.home a.project:hover{
   border-bottom: 1px solid #72BCED;
 }
 
