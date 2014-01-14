@@ -188,21 +188,27 @@ div.home img.logo{
 
 @media screen and (min-width: 36em) {
   div.home img.logo{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 }
 
 @media screen and (min-width: 40em) {
   div.home img.logo{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 }
 
 @media screen and (min-width: 23em) {
   div.home img.logo{
-    float: right;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  div.home .about-clear{
+    clear: both;
   }
 }
 
@@ -371,4 +377,11 @@ p.design-box span.colour.colour-715a4a{
 
 p.design-box span.colour.colour-fbf032{
   background-color: #fbf032;
+}
+
+/* Quotes */
+
+blockquote {
+  border-left: 0.5em solid #ddd;
+  padding-left: 0.5em;
 }

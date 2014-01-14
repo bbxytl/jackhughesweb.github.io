@@ -5,12 +5,12 @@ nav: about
 ---
 
 <div id="home" class="home">
-  <img src="/img/logo.png" alt="JH" class="logo">
+  <img src="/img/pic.jpg" alt="A picture of me" class="logo">
   <p class="about-heading"><span class="mobile">Hi, I'm Jack and </span>I'm a web developer from Worcester, UK</p>
   <p class="about-text about-splitter">You can find me tweeting about web development on <a href="http://twitter.com/jackhughesweb">Twitter</a>, open-sourcing code on <a href="http://github.com/jackhughesweb">GitHub</a>, blogging and sharing photos on <a href="http://500px.com/jackhughesweb">500px</a>.</p>
-  <p class="about-subheading">Recent projects</p>
+  <p class="about-subheading about-clear">Recent projects</p>
   {% for project in site.tags.project limit: 3 %}
-  <a href="{{ project.url }}" class="project">
+  <a href="{{ project.url }}" class="project about-clear">
     <p class="about-text project">
       <span>
         <span class="project-title">{{ project.title }}</span>
@@ -20,9 +20,9 @@ nav: about
     </p>
   </a>
   {% endfor %}
-  <p class="about-subheading">Recent blog posts</p>
+  <p class="about-subheading about-clear">Recent blog posts</p>
   {% for post in site.tags.blog limit: 3 %}
-  <a href="{{ post.url }}" class="post">
+  <a href="{{ post.url }}" class="post about-clear">
     <p class="about-text post">
       <span>
         <span class="post-title">{{ post.title }}</span>
@@ -32,6 +32,6 @@ nav: about
     </p>
   </a>
   {% endfor %}
-  <p class="about-subheading">Contact me</p>
-  <p class="about-text">Feel free to Tweet me <a href="http://twitter.com/jackhughesweb">@jackhughesweb</a> or email me at <a href="mailto:jack@jackhughesweb.com">jack@jackhughesweb.com</a>.</p>
+  <p class="about-subheading about-clear">Contact me</p>
+  <p class="about-text about-clear">Feel free to Tweet me <a href="http://twitter.com/jackhughesweb">@jackhughesweb</a> or email me at <a href="mailto:jack@jackhughesweb.com">jack@jackhughesweb.com</a>.</p>
 </div>
