@@ -1,7 +1,7 @@
 ---
 layout: blogpost
 title:  "The Bus"
-date:   2014-01-15
+date:   2014-01-16
 permalink: /blog/bus/
 tags:
 - blog
