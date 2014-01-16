@@ -7,7 +7,7 @@ tags:
 - blog
 ---
 
-Firstly, for those who haven’t heard of PenPencilRuler.com, it is a website where students could type up their revision notes (full length or short jottings) which are then sorted into subjects and topics to make notes easier to find. (The other main features of PPR were that you were less likely to lose your notes and all notes were private)
+PenPencilRuler.com, it is a website where students could type up their revision notes (full length or short jottings) which are then sorted into subjects and topics to make notes easier to find.
 
 ## Before PenPencilRuler.com
 
@@ -29,7 +29,7 @@ Two months later (October 2013), I had added a few more features, setup the data
 
 I had to decide whether to continue running and developing PPR. I ran another (also unsuccessful) Facebook campaign. Today I have made the final decision of closing down PenPencilRuler.com. It is heartbreaking for me to close it because I spent so much of my time working on it, but nobody was going to use it anyway. The website relied on people who revised by only reading, not by creating visual or auditory things. The website was basically flawed from the start, but I had not realised it since I was stuck in a bubble thinking about the fame and glory because I had seen how successful many startups are.
 
-## My Thoughts
+## Thoughts
 
 From the past few months, I would tell people who are starting their first project to plan each step of the project – have a plan for development and design, know what you are researching and make sure that you know how you are going to market your product/service. You will feel awesome for creating something, even if some people poke fun at what you have made.
 

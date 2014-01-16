@@ -17,4 +17,4 @@ A journal allows you to reflect on your life. To change how you behave.
 
 And yes, there'll be *those people* who will laugh about you writing in a journal. But ignore them. Because you have a **journal**.
 
-Whether you use an [app](http://dayoneapp.com/), a [Moleskine](http://www.moleskine.com/) or a [basic notepad](http://www.amazon.co.uk/s/ref=nb_sb_noss?field-keywords=notepad) - **just write**.
+So get a journal, digital or physical, and **just write**.

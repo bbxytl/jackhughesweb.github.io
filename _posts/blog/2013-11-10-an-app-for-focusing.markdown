@@ -27,4 +27,4 @@ There are lots of apps available — except *one*:
 
 An app for **focusing**. To turn off distractions. To ignore notifications. To **focus on tasks**.
 
-It’s not easy to concentrate with the endless amounts of apps on our devices, but the next time you are trying to keep on task — try to delay replying to that tweet, reading that newsletter or catching up on your RSS feeds. Try to turn your app-filled device **off**.
+It’s not easy to concentrate with the endless amounts of apps on our devices, but try to keep on task  - delay replying to that tweet, reading that newsletter or catching up on RSS feeds. Just turn your app-filled device **off**.
