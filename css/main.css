@@ -29,6 +29,14 @@ h1.blog{
   font-size: 3em;
 }
 
+h2{
+  font-size: 2.25em;
+}
+
+h3{
+  font-size: 1.75em;
+}
+
 small.date{
   font-size: 1em;
 }
@@ -431,7 +439,7 @@ blockquote {
 @media screen and (min-width: 60em) {
 
   div.link-top{
-    background-color: black;
+    background-color: #888;
     position: fixed;
     opacity: 0;
     cursor: pointer;
@@ -442,17 +450,18 @@ blockquote {
     background-image: url('/img/top-sprite.png');
     background-size: 100% 200%;
     background-position: 0% 0%;
-    transition: background-position 0.5s ease, opacity 0.05s ease; 
+    transition: background-position 0.5s ease, opacity 0.05s ease, background-color 0.5s ease; 
   }
 
   html.floating div.link-top{
     opacity: 1;
-    transition: background-position 0.5s ease, opacity 0.5s ease;
+    transition: background-position 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
   }
 
   div.link-top:hover{
     background-position: 0% 100%;
-    transition: background-position 0.5s ease; 
+    background-color: #2980b9;
+    transition: background-position 0.5s ease, background-color 0.5s ease; 
   }
 
 }
