@@ -2,6 +2,7 @@
 layout: default
 nav: blog
 ---
+<div class="link-top"></div>
 <div class="post post-blog">
 {{ content }}
 <hr>
@@ -21,3 +22,24 @@ nav: blog
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script>
+  var animation = setInterval(function(){ 
+    if(window.scrollY < ($('header').height() * 0.25)){ 
+      document.getElementsByTagName('body')[0].className = ""; 
+    }else{ 
+      document.getElementsByTagName('body')[0].className = "white"; 
+    }
+    if(window.scrollY < ($('header').height())){ 
+      document.getElementsByTagName('html')[0].className = "icon"; 
+    }else{ 
+      document.getElementsByTagName('html')[0].className = "icon floating"; 
+    }
+  }, 100);
+  (function($){
+    $('.link-top').click(function(){
+      $('html').animate({ scrollTop: 0 }, 'slow');
+      $('body').animate({ scrollTop: 0 }, 'slow');
+    });
+  })(jQuery);
+</script>

@@ -25,6 +25,14 @@ h1{
   font-size: 2em;
 }
 
+h1.blog{
+  font-size: 3em;
+}
+
+small.date{
+  font-size: 1em;
+}
+
 p{ 
   margin: 1em 0;
 }
@@ -384,4 +392,66 @@ p.design-box span.colour.colour-fbf032{
 blockquote {
   border-left: 0.5em solid #ddd;
   padding-left: 0.5em;
+}
+
+/* White blog style */
+
+@media screen and (min-width: 36em) {
+
+  div.title-bar, header > div > a, header > div > a.current, header{
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  body.white > div.title-bar{
+    transition: background-color 0.2s ease, color 0.2s ease;
+    background-color: white;
+    color: black;
+  }
+
+  body.white > header > div > a {
+    transition: background-color 0.2s ease, color 0.2s ease;
+    background-color: #aaa;
+  }
+
+  body.white > header > div > a.current{
+    transition: background-color 0.2s ease, color 0.2s ease;
+    background-color: #ddd;
+  }
+
+  body.white > header {
+    transition: background-color 0.2s ease, color 0.2s ease;
+    background-color: #888;
+  }
+
+}
+
+/* Button to top */
+
+@media screen and (min-width: 60em) {
+
+  div.link-top{
+    background-color: black;
+    position: fixed;
+    opacity: 0;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    background-image: url('/img/top-sprite.png');
+    background-size: 100% 200%;
+    background-position: 0% 0%;
+    transition: background-position 0.5s ease, opacity 0.05s ease; 
+  }
+
+  html.floating div.link-top{
+    opacity: 1;
+    transition: background-position 0.5s ease, opacity 0.5s ease;
+  }
+
+  div.link-top:hover{
+    background-position: 0% 100%;
+    transition: background-position 0.5s ease; 
+  }
+
 }
