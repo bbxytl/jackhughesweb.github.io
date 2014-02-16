@@ -5,6 +5,7 @@ date:   2013-11-10
 permalink: /blog/an-app-for-focusing/
 tags:
 - blog
+redirecturl: "http://blog.jackhughesweb.com/an-app-for-focusing"
 ---
 
 Whenever I get a new, shiny device, the first thing I do is download apps. And *more apps* and *more apps* until I can’t download any more.

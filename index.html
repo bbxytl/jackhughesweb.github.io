@@ -22,7 +22,7 @@ nav: about
   {% endfor %}
   <p class="about-subheading about-clear">Recent blog posts</p>
   {% for post in site.tags.blog limit: 3 %}
-  <a href="{{ post.url }}" class="post about-clear">
+  <a href="{{ post.redirecturl }}" class="post about-clear">
     <p class="about-text post">
       <span>
         <span class="post-title">{{ post.title }}</span>
