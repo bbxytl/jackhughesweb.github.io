@@ -6,7 +6,7 @@ nav: projects
 
 <div id="projects" class="projects">
     {% for project in site.tags.project %}
-      <a href="{{ project.url }}">
+      <a href="{{ project.redirecturl }}">
         <span>{{ project.title }}</span>
         <br>
         <small>{{ project.subtitle }}</small>
