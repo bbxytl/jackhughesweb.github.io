@@ -77,6 +77,12 @@ div.home section > * {
   padding-bottom: 3em;
 }
 
+@media screen and (max-width: 52em) {
+  div.home section > *, div.blog-list section > *, div.blog-post section > * {
+    width: 90%;
+  }
+}
+
 div.home section.header {
   background-color: #2980b9;
 }
@@ -291,7 +297,6 @@ div.blog-post section.post article * {
 }
 
 div.header-container {
-  background-image: url('/img/default.jpg');
   background-position: center;
   background-size: cover;
 }

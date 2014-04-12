@@ -43,6 +43,16 @@ nav: blog
   </section>
 </div>
 
+<style>
+  div.header-container {
+    {% if page.header %}
+      background-image: url('{{ page.header }}');
+    {% else %}
+      background-image: url('/img/default.jpg');
+    {% endif %}
+  }
+</style>
+
 <!--
 
 <div class="link-top"></div>
