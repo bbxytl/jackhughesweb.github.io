@@ -4,12 +4,22 @@ title: Projects
 nav: projects
 ---
 
-<div id="projects" class="projects">
-    {% for project in site.tags.project %}
-      <a href="{{ project.redirecturl }}">
-        <span>{{ project.title }}</span>
-        <br>
-        <small>{{ project.subtitle }}</small>
-      </a>
-    {% endfor %}
+<div id="blog-list" class="blog-list">
+  <a href="/" class="no-dec">
+    <section class="header">
+      <article>
+        <h1><span class="darker">Jack Hughes/</span>Projects</h1>
+      </article>
+    </section>
+  </a>
+  <section class="blog">
+    <article>
+      <h2>Projects</h2>
+      <ul>
+        {% for project in site.tags.project %}
+          <li><a href="{{ project.redirecturl }}">{{ project.title }}<br><small>{{ project.subtitle }}</small></a></li>
+        {% endfor %}
+      </ul>
+    </article>
+  </section>
 </div>

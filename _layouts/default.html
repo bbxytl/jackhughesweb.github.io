@@ -8,13 +8,6 @@
     
         <meta property="twitter:account_id" content="1512910730" />
 
-        {% if page.redirecturl %}
-        <noscript>
-          <meta http-equiv="refresh" content="0;URL={{ page.redirecturl }}">
-        </noscript>
-        <script>location.replace("{{ page.redirecturl }}")</script>
-        {% endif %}
-
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
@@ -29,7 +22,7 @@
     </head>
     <body>
 
-        <header>
+        <!-- <header>
           <div class="container">
             {% if page.nav == "about" %}
                 <a href="/" class="current"><img src="/img/logo-white.png" width="30" height="30"><span>Jack Hughes</span></a>
@@ -47,9 +40,9 @@
                 <a href="/projects"><img src="/img/projects.png" width="30" height="30"><span>Projects</span></a>
             {% endif %}
           </div>
-        </header>
+        </header> -->
 
-        <div class="title-bar">
+        <!-- <div class="title-bar">
           <div class="container">
           {% if page.date %}
             {% unless page.work %}
@@ -72,7 +65,7 @@
             {% endif %}
           {% endif %}
           </div>
-        </div>
+        </div> -->
 
         <div class="container content">
           {{ content }}

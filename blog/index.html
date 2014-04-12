@@ -4,12 +4,22 @@ title: Blog
 nav: blog
 ---
 
-<div id="blog" class="blog">
-    {% for post in site.tags.blog %}
-      <a href="{{ post.url }}">
-        <span>{{ post.title }}</span>
-        <br>
-        <small>{{ post.date | date: "%-d %B, %Y" }}</small>
-      </a>
-    {% endfor %}
+<div id="blog-list" class="blog-list">
+  <a href="/" class="no-dec">
+    <section class="header">
+      <article>
+        <h1><span class="darker">Jack Hughes/</span>Blog Posts</h1>
+      </article>
+    </section>
+  </a>
+  <section class="blog">
+    <article>
+      <h2>Blog posts</h2>
+      <ul>
+        {% for post in site.tags.blog %}
+          <li><a href="{{ post.url }}">{{ post.title }}<br><small>{{ post.date | date: "%-d %B, %Y" }}</small></a></li>
+        {% endfor %}
+      </ul>
+    </article>
+  </section>
 </div>
