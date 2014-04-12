@@ -355,3 +355,12 @@ div.blog-post hr {
   height: 1px;
   background: #333;
 }
+
+a.rss-feed {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.2em 0.4em;
+  border-radius: 0.5em;
+  display: inline-block;
+}
