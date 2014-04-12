@@ -5,7 +5,6 @@ date:   2013-10-08
 permalink: /blog/penpencilruler-status/
 tags:
 - blog
-redirecturl: "http://blog.jackhughesweb.com/penpencilruler"
 ---
 
 PenPencilRuler.com, it is a website where students could type up their revision notes (full length or short jottings) which are then sorted into subjects and topics to make notes easier to find.

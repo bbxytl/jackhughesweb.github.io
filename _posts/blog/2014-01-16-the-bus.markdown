@@ -5,7 +5,6 @@ date:   2014-01-16
 permalink: /blog/bus/
 tags:
 - blog
-redirecturl: "http://blog.jackhughesweb.com/the-bus"
 ---
 
 My bus usually arrives when it pleases. It never sticks to the schedule. So I wait in the bus shelter — the one which smells of urine, has empty bottles of beer, a burnt bin and a noticeboard on its last legs. Lovely.

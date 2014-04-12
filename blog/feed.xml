@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Jack Hughes Web</title>
+ <title>Jack Hughes</title>
  <link href="http://jackhughesweb.com/blog/feed.xml" rel="self"/>
  <link href="http://jackhughesweb.com/blog/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
