@@ -346,3 +346,12 @@ p.blog-post-preview a {
 div.blog-post section.subscribe h3, div.blog-post section.next-post h3 {
   font-size: 2.25em;
 }
+
+div.blog-post hr {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  height: 1px;
+  background: #333;
+}
