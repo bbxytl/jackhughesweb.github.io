@@ -370,3 +370,7 @@ a.rss-feed {
   border-radius: 0.5em;
   display: inline-block;
 }
+
+section.post p {
+  font-weight: 300;
+}
