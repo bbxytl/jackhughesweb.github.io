@@ -46,6 +46,10 @@ a.no-dec {
   text-decoration: none;
 }
 
+a.link-white{
+  color: #ffffff;
+}
+
 a img {
   border: none;
 }
@@ -373,4 +377,21 @@ a.rss-feed {
 
 section.post p {
   font-weight: 300;
+}
+
+div.blog-post div.header-no-photo {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+div.blog-post div.header-no-photo section article {
+  color: #000000;
+  text-shadow: none;
+  padding-top: 3em;
+  padding-bottom: 0;
+}
+
+div.blog-post div.header-no-photo section article a {
+  color: #000000;
+  text-shadow: none;
 }
