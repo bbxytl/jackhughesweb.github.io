@@ -1,0 +1,113 @@
+body {
+  background-color: #2980b9;
+}
+
+* {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body { 
+  height: 100%;
+}
+
+body {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+h1 { 
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+p { 
+  margin: 1em 0;
+}
+
+a { 
+  color: #ffffff;
+}
+a:hover { 
+  color: #72BCED; 
+}
+a:visited { 
+  color: #ffffff; 
+}
+
+a.no-dec {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+a.arrow-white {
+  color: #ffffff;
+  background-image: url('/img/arrow-white.png');
+  background-size: 0.75em;
+  padding-right: 1em;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+a.arrow-white:hover {
+  text-decoration: underline;
+}
+
+blockquote {
+  border-left: 5px solid #3498db;
+  padding-left: 5px;
+}
+
+section > * {
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+@media screen and (max-width: 52em) {
+  section > * {
+    width: 90%;
+  }
+}
+
+h1 * {
+  vertical-align: middle;
+}
+
+h1 span {
+  margin-left: 0.5em;
+  display: inline-block;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.udown {
+  border-radius: 100em;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  width: 80px;
+  height: 80px;
+}
