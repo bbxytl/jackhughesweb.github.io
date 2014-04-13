@@ -7,8 +7,8 @@ nav: blog
   <div class="header-container">
     <section class="header">
       <article>
-        <h2>{{ page.title }}</h2>
-        <h3 class="attr">By <a href="/">Jack Hughes</a></h3>
+        <h1>{{ page.title }}</h1>
+        <h2 class="attr">By <a href="/">Jack Hughes</a></h2>
         <small class="date">{{ page.date | date: "%-d %B, %Y" }}</small>
       </article>
     </section>
@@ -39,6 +39,7 @@ nav: blog
           <p class="blog-post-preview"><a href="{{ page.previous.url }}">{{ page.previous.title }}<br><small>{{ page.previous.date | date: "%-d %B, %Y" }}</small></a></p>
         {% endif %} 
       {% endif %}
+      <h4><a href="/blog" class="no-dec arrow-white">More posts</a></h4>
     </article>
   </section>
 </div>

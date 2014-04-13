@@ -51,6 +51,7 @@ a img {
 }
 
 a.arrow-white {
+  color: #ffffff;
   background-image: url('/img/arrow-white.png');
   background-size: 0.75em;
   padding-right: 1em;
@@ -323,11 +324,11 @@ div.blog-post a.home section p {
   margin: 0;
 }
 
-div.blog-post h3.attr {
-  font-size: 0.8rem;
+div.blog-post h2.attr {
+  font-size: 1.2em;
 }
 
-div.blog-post h3.attr a {
+div.blog-post h2.attr a {
   color: #ffffff;
 }
 
