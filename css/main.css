@@ -100,8 +100,12 @@ div.home section.projects {
   background-color: #81bde3;
 }
 
-div.home section.contact {
+div.home section.design {
   background-color: #bfdef1;
+}
+
+div.home section.contact {
+  background-color: #ffffff;
 }
 
 div.home section.header * {
@@ -214,6 +218,10 @@ div.home section.projects img.project-hero {
   max-width: 100%;
 }
 
+div.home section.design * {
+  color: #ffffff;
+}
+
 /* Contact me section */
 
 div.home section.contact a {
@@ -277,6 +285,26 @@ div.blog-list section.blog ul li {
   cursor: pointer;
 }
 
+div.blog-list section.blog.design-list ul li {
+  cursor: default;
+  padding: 1em;
+}
+
+div.blog-list section.blog.design-list ul li * {
+  color: #000000;
+}
+
+div.blog-list section.blog.design-list ul li img {
+  border: 5px solid #dddddd;
+  text-align: center;
+  width: 410px;
+  max-width: 100%;
+}
+
+div.blog-list section.blog.design-list ul li.large img {
+  width: 100%;
+}
+
 div.blog-list section.blog ul li a {
   color: #000000;
   background-color: #ffffff;
@@ -289,6 +317,20 @@ div.blog-list section.blog ul li a {
 
 div.blog-list section.blog ul li a:hover {
   background-color: #bfdef1;
+}
+
+div.blog-list section.blog.design-list ul li a.img-large {
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: underline;
+  width: auto;
+  height: auto;
+  padding: 0;
+  display: inline-block;
+}
+
+div.blog-list section.blog.design-list ul li a.img-large:hover {
+  background-color: none;
 }
 
 div.blog-post section > * {

@@ -24,12 +24,17 @@ nav: about
   </section>
   <section class="projects">
     <article>
-      <h2><a href="/projects" class="no-dec arrow-white">Projects</a></h2>
+      <h2><a href="/projects" class="no-dec arrow-white">Development Projects</a></h2>
       <ul>
         {% for project in site.tags.project limit: 3 %}
           <li><a href="{{ project.redirecturl }}">{{ project.title }}<br><small>{{ project.subtitle }}</small></a></li>
         {% endfor %}
       </ul>
+    </article>
+  </section>
+  <section class="design">
+    <article>
+      <h2><a href="/design" class="no-dec arrow-white">Design Projects</a></h2>
     </article>
   </section>
   <section class="contact">
