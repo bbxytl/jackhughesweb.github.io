@@ -88,6 +88,42 @@ div.home section > * {
   }
 }
 
+@media screen and (max-width: 55em) {
+  body {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  body {
+    font-size: 0.90rem;
+  }
+}
+
+@media screen and (max-width: 45em) {
+  body {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 22em) {
+  body {
+    font-size: 0.80rem;
+  }
+}
+
+@media screen and (max-width: 17em) {
+  body {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 13em) {
+  body {
+    font-size: 0.70rem;
+  }
+}
+
 div.home section.header {
   background-color: #2980b9;
 }
@@ -121,7 +157,7 @@ div.home section.header img.logo {
 
 @media screen and (max-width: 20em) {
   div.home section.header img.logo{
-    width: 90%;
+    width: 60%;
     height: auto;
   }
 }
