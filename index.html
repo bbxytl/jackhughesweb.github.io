@@ -26,7 +26,6 @@ nav: about
     <article>
       <h2><a href="/projects" class="no-dec arrow-white">Projects</a></h2>
       <ul>
-        <!-- <li><a href="#"><img src="/img/work/penpencilruler-hero.png" alt="PenPencilRuler" class="project-hero"></a></li> -->
         {% for project in site.tags.project limit: 3 %}
           <li><a href="{{ project.redirecturl }}">{{ project.title }}<br><small>{{ project.subtitle }}</small></a></li>
         {% endfor %}
@@ -41,35 +40,3 @@ nav: about
     </article>
   </section>
 </div>
-
-<!-- <div id="home" class="home">
-  <img src="/img/pic.jpg" alt="A picture of me" class="logo">
-  <p class="about-heading"><span class="mobile">Hi, I'm Jack and </span>I'm passionate about web development and design</p>
-  <p class="about-text about-splitter">You can find me tweeting on <a href="http://twitter.com/jackhughesweb">Twitter</a>, open-sourcing code on <a href="http://github.com/jackhughesweb">GitHub</a> and <a href="http://blog.jackhughesweb.com/">blogging</a>.</p>
-  <p class="about-subheading about-clear">Recent projects</p>
-  {% for project in site.tags.project limit: 3 %}
-  <a href="{{ project.redirecturl }}" class="project about-clear">
-    <p class="about-text project">
-      <span>
-        <span class="project-title">{{ project.title }}</span>
-        <br>
-        <small class="project-subtitle">{{ project.subtitle }}</small>
-      </span>
-    </p>
-  </a>
-  {% endfor %}
-  <p class="about-subheading about-clear">Recent blog posts</p>
-  {% for post in site.tags.blog limit: 3 %}
-  <a href="{{ post.redirecturl }}" class="post about-clear">
-    <p class="about-text post">
-      <span>
-        <span class="post-title">{{ post.title }}</span>
-        <br>
-        <small class="post-subtitle">{{ post.date | date: "%-d %B, %Y" }}</small>
-      </span>
-    </p>
-  </a>
-  {% endfor %}
-  <p class="about-subheading about-clear">Contact me</p>
-  <p class="about-text about-clear">Feel free to Tweet me <a href="http://twitter.com/jackhughesweb">@jackhughesweb</a> or email me at <a href="mailto:jack@jackhughesweb.com">jack@jackhughesweb.com</a> (<a href="https://gist.github.com/jackhughesweb/9534787">PGP key</a>).</p>
-</div> -->
