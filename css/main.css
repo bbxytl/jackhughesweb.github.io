@@ -214,6 +214,12 @@ div.home section.projects img.project-hero {
   max-width: 100%;
 }
 
+/* Contact me section */
+
+div.home section.contact a {
+  color: #000000;
+}
+
 /* Blog posts and lists */
 
 div.blog-list section > * {
@@ -407,4 +413,15 @@ div.header-container.header-photo a.photo-credit {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
   color: #fff;
+}
+
+/* Social buttons */
+
+p.p-social {
+  text-align: center;
+}
+
+img.img-social {
+  width: 40px;
+  margin: 1em;
 }
