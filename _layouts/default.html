@@ -23,51 +23,6 @@
     </head>
     <body>
 
-        <!-- <header>
-          <div class="container">
-            {% if page.nav == "about" %}
-                <a href="/" class="current"><img src="/img/logo-white.png" width="30" height="30"><span>Jack Hughes</span></a>
-            {% else %}
-                <a href="/"><img src="/img/logo-white.png" width="30" height="30"><span>Jack Hughes</span></a>
-            {% endif %}
-            {% if page.nav == "blog" %}
-                <a href="http://blog.jackhughesweb.com" class="current"><img src="/img/blog.png" width="30" height="30"><span>Blog</span></a>
-            {% else %}
-                <a href="http://blog.jackhughesweb.com"><img src="/img/blog.png" width="30" height="30"><span>Blog</span></a>
-            {% endif %}
-            {% if page.nav == "projects" %}
-                <a href="/projects" class="current"><img src="/img/projects.png" width="30" height="30"><span>Projects</span></a>
-            {% else %}
-                <a href="/projects"><img src="/img/projects.png" width="30" height="30"><span>Projects</span></a>
-            {% endif %}
-          </div>
-        </header> -->
-
-        <!-- <div class="title-bar">
-          <div class="container">
-          {% if page.date %}
-            {% unless page.work %}
-              <h1 class="blog">{{ page.title }}</h1>
-            {% else %}
-              <h1>{{ page.title }}</h1>
-            {% endunless %}
-          {% else %}
-            <h1>{{ page.title }}</h1>
-          {% endif %}
-          {% if page.date %}
-              {% unless page.work %}
-                  <small class="date">{{ page.date | date: "%-d %B, %Y" }}</small>
-                {% else %}
-                  <small class="subtitle">{{ page.subtitle }}</small>
-              {% endunless %}
-          {% else %}
-            {% if page.subtitle %}
-              <small class="subtitle">{{ page.subtitle }}</small>
-            {% endif %}
-          {% endif %}
-          </div>
-        </div> -->
-
         <div class="container content">
           {{ content }}
         </div>
