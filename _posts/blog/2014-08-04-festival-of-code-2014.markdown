@@ -14,7 +14,7 @@ Throughout the week, I worked on a game called ExploreLocal, at the Social Break
 
 It was built using HTML5, CSS3, JavaScript, jQuery and the Google Maps JavaScript API v3 for the front-end. For the back-end, the Rails server provides an interface for adding new locations to the database and also generates new random games.
 
-During the weekend, I travelled to Plymouth to present my game in the heats, and I managed to enter the semi-finals for the Best in Show category:
+On Friday, I travelled to Plymouth and on Saturday, I presented my game in the heats and managed to reach the semi-finals for the Best in Show category:
 
 <blockquote class="twitter-tweet" lang="en"><p>Jack&#39;s <a href="https://twitter.com/hashtag/ExploreLocal?src=hash">#ExploreLocal</a> is in the &#39;best in show&#39; semi!! <a href="https://twitter.com/hashtag/YRSFoC?src=hash">#YRSFoC</a> <a href="https://twitter.com/hashtag/FestivalofCode?src=hash">#FestivalofCode</a> <a href="http://t.co/vIuYeTElGh">pic.twitter.com/vIuYeTElGh</a></p>&mdash; Nathan Coyle (@nathan_coyle) <a href="https://twitter.com/nathan_coyle/statuses/495604481619668992">August 2, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
