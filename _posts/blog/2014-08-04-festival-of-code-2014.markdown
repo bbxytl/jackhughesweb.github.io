@@ -72,7 +72,7 @@ the guess.</p>
 <p>[JUDGE 1]: I was just thinking before, about how it could be improved in the future?</p>
 <p>[ME]: Yeah, so there was the future roadmap, which I just showed you before, but also, I would like to include local businesses and have sponsored places and get money towards it as well.</p>
 
-<p>[JUDGE 2]: How would it take before somebody would stop playing it?</p>
+<p>[JUDGE 2]: How long would it take before somebody would stop playing it?</p>
 <p>[ME]: Most of the people which I got to play it, played it for about three or four times but at the moment, I've got 14 places in the database, so after so many games, the same places keep coming up, but if I added more places, people would play it for longer.</p>
 
 <p>[JUDGE 1]: So, I hate Geography, but I love this, and have you thought about how this might possibly go further, such as including state capitals?</p>
