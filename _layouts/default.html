@@ -20,6 +20,17 @@
 
         <link rel="shortcut icon" href="/favicon.ico">
 
+        <script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+        <script>
+          $(document).ready(function(){
+            $("section.post").fitVids();
+            $(".transcript-toggle").on("click", function () {
+                $(".transcript-content").slideToggle();
+            });
+          });
+        </script>
+
     </head>
     <body>
 

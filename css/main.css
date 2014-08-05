@@ -503,3 +503,25 @@ img.img-social {
   width: 40px;
   margin: 1em;
 }
+
+/* Transcript section */
+
+div.transcript {
+  border-bottom: 5px solid #3498db;
+  padding-bottom: 5px;
+  background-color: #eeeeee;
+}
+
+div.transcript article.transcript-toggle {
+  cursor: pointer;
+}
+
+div.transcript article.transcript-toggle:hover {
+  text-decoration: underline;
+}
+
+div.transcript article.transcript-content {
+  display: none;
+  max-height: 10.25em;
+  overflow: scroll;
+}
