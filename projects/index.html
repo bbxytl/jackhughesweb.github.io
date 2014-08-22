@@ -14,10 +14,16 @@ nav: projects
   </a>
   <section class="blog">
     <article>
-      <h2>Development Projects</h2>
+      <h2>Projects</h2>
       <ul>
         {% for project in site.tags.project %}
-          <li><a href="{{ project.redirecturl }}">{{ project.title }}<br><small>{{ project.subtitle }}</small></a></li>
+          <li>
+            <a href="{{ project.url }}">
+              {{ project.title }}
+              <br>
+              <small>{{ project.subtitle }}</small>
+            </a>
+          </li>
         {% endfor %}
       </ul>
     </article>

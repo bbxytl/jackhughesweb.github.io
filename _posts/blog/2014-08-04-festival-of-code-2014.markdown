@@ -3,7 +3,7 @@ layout: blogpost
 title:  "YRS Festival of Code 2014"
 date:   2014-08-04
 permalink: /blog/yrs2014/
-header: "/img/yrs2014.jpg"
+header: "/img/blog/yrs2014.jpg"
 tags:
 - blog
 ---

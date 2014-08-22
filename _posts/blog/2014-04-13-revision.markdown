@@ -3,7 +3,7 @@ layout: blogpost
 title:  "Revision"
 date:   2014-04-13
 permalink: /blog/revision/
-header: "/img/revision-notes.jpg"
+header: "/img/blog/revision.jpg"
 headercredit: "https://flic.kr/p/2smj3"
 headercredittext: "Photo from Flickr/CC-BY-SA-2.0"
 tags:

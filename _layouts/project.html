@@ -2,6 +2,52 @@
 layout: default
 nav: portfolio
 ---
-<div class="post">
-Redirecting you now to <a href="{{ page.redirecturl }}">{{ page.redirecturl }}</a>
+<div id="blog-post" class="blog-post">
+  <div class="header-container {% if page.header %}header-photo{% else %}header-no-photo{% endif %}">
+    <section class="header">
+      <article>
+        <h1>{{ page.title }}</h1>
+        {% if page.active %}
+          <small><span class="label-active">Active</span></small>
+        {% else %}
+          <small><span class="label-discontinued">Discontinued</span></small>
+        {% endif %}
+      </article>
+    </section>
+    {% if page.headercredit %}
+      <a href="{{ page.headercredit }}" class="link-white photo-credit" rel="nofollow"><small>
+        {% if page.headercredittext %}
+          {{ page.headercredittext }}
+        {% else %}
+          Photo credit
+        {% endif %}
+      </small></a>
+    {% endif %}
+  </div>
+  <section class="post">
+    <article>
+      {{ content }}
+    </article>
+  </section>
+  <section class="subscribe">
+    <article>
+      <h3>Like this project?</h3>
+      <p><iframe src="http://ghbtns.com/github-btn.html?user=jackhughesweb&repo={{ page.github-repo }}&type=watch&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160" height="30"></iframe></p>
+      <p><iframe src="http://ghbtns.com/github-btn.html?user=jackhughesweb&repo={{ page.github-repo }}&type=follow&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="232" height="30"></iframe></p>
+      <p><a href="https://twitter.com/jackhughesweb" class="twitter-follow-button" data-dnt="true" data-size="large" data-show-count="false">Follow @jackhughesweb</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+    </article>
+  </section>
+  <section class="next-post">
+    <article>
+      <h3><a href="/projects" class="no-dec arrow-white">More projects <span class="arrow"></span></a></h3>
+    </article>
+  </section>
 </div>
+
+<style>
+  div.header-container {
+    {% if page.header %}
+      background-image: url('{{ page.header }}');
+    {% endif %}
+  }
+</style>

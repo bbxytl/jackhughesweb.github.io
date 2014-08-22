@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 html, body { 
@@ -46,8 +47,16 @@ a.no-dec {
   text-decoration: none;
 }
 
-a.link-white{
+a.hover-under:hover {
+  text-decoration: underline;
+}
+
+a.link-white {
   color: #ffffff;
+}
+
+a.link-black {
+  color: #000000;
 }
 
 a img {
@@ -56,10 +65,15 @@ a img {
 
 a.arrow-white {
   color: #ffffff;
+}
+
+a.arrow-white span.arrow {
   background-image: url('/img/arrow-white.png');
-  background-size: 0.75em;
-  padding-right: 1em;
-  background-position: right center;
+  background-position: center right;
+  background-size: cover;
+  width: 0.75em;
+  height: 0.75em;
+  display: inline-block;
   background-repeat: no-repeat;
 }
 
@@ -381,6 +395,10 @@ div.blog-post section.post {
   background-color: #ffffff;
 }
 
+div.blog-post section.post article img {
+  max-width: 100%;
+}
+
 div.blog-post section.post article * {
   font-size: 1.25rem;
 }
@@ -461,6 +479,7 @@ a.rss-feed {
 
 section.post p {
   font-weight: 300;
+  word-wrap: break-word;
 }
 
 div.blog-post div.header-no-photo {
@@ -499,9 +518,82 @@ p.p-social {
   text-align: center;
 }
 
-img.img-social {
-  width: 40px;
-  margin: 1em;
+span.social {
+  width: 3em;
+  height: 3em;
+  margin: 0.5em;
+  background-image: url('/img/icon-sprite.png');
+  background-size: cover;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+span.social-email {
+  background-image: url('/img/email.png');
+}
+
+span.social-vcard {
+  background-image: url('/img/vcard.png');
+}
+
+span.social-twitter {
+  background-image: url('/img/twitter.png');
+}
+
+span.social-github {
+  background-image: url('/img/github.png');
+}
+
+span.social-dribbble {
+  background-image: url('/img/dribbble.png');
+}
+
+span.social-500px {
+  background-image: url('/img/500px.png');
+}
+
+span.social-soundcloud {
+  background-image: url('/img/soundcloud.png');
+}
+
+span.social-stackoverflow {
+  background-image: url('/img/stackoverflow.png');
+}
+
+span.social-email:hover, span.social-email-preload {
+  background-image: url('/img/email-hover.png');
+}
+
+span.social-vcard:hover, span.social-vcard-preload {
+  background-image: url('/img/vcard-hover.png');
+}
+
+span.social-twitter:hover, span.social-twitter-preload {
+  background-image: url('/img/twitter-hover.png');
+}
+
+span.social-github:hover, span.social-github-preload {
+  background-image: url('/img/github-hover.png');
+}
+
+span.social-dribbble:hover, span.social-dribbble-preload {
+  background-image: url('/img/dribbble-hover.png');
+}
+
+span.social-500px:hover, span.social-500px-preload {
+  background-image: url('/img/500px-hover.png');
+}
+
+span.social-soundcloud:hover, span.social-soundcloud-preload {
+  background-image: url('/img/soundcloud-hover.png');
+}
+
+span.social-stackoverflow:hover, span.social-stackoverflow-preload {
+  background-image: url('/img/stackoverflow-hover.png');
+}
+
+.preload {
+  display: none !important;
 }
 
 /* Transcript section */
@@ -524,4 +616,24 @@ div.transcript article.transcript-content {
   display: none;
   max-height: 10.25em;
   overflow: scroll;
+}
+
+/* Work posts */
+
+span.label-active {
+  background-color: #3ad13f;
+  color: #ffffff !important;
+  display: inline-block;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  font-size: 0.8rem;
+}
+
+span.label-discontinued {
+  background-color: #b20a0b;
+  color: #ffffff !important;
+  display: inline-block;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  font-size: 0.8em;
 }

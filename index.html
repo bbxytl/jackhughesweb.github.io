@@ -14,7 +14,7 @@ nav: about
   </section>
   <section class="blog">
     <article>
-      <h2><a href="/blog" class="no-dec arrow-white">Blog posts</a></h2>
+      <h2><a href="/blog" class="no-dec arrow-white">Blog posts <span class="arrow"></span></a></h2>
       <ul>
         {% for post in site.tags.blog limit: 3 %}
           <li><a href="{{ post.url }}">{{ post.title }}<br><small>{{ post.date | date: "%-d %B, %Y" }}</small></a></li>
@@ -24,30 +24,40 @@ nav: about
   </section>
   <section class="projects">
     <article>
-      <h2><a href="/projects" class="no-dec arrow-white">Development Projects</a></h2>
+      <h2><a href="/projects" class="no-dec arrow-white">Projects <span class="arrow"></span></a></h2>
       <ul>
         {% for project in site.tags.project limit: 3 %}
-          <li><a href="{{ project.redirecturl }}">{{ project.title }}<br><small>{{ project.subtitle }}</small></a></li>
+          <li>
+            <a href="{{ project.url }}">
+              {{ project.title }}
+              <br>
+              <small>{{ project.subtitle }}</small>
+            </a>
+          </li>
         {% endfor %}
       </ul>
-    </article>
-  </section>
-  <section class="design">
-    <article>
-      <h2><a href="/design" class="no-dec arrow-white">Design Projects</a></h2>
     </article>
   </section>
   <section class="contact">
     <article>
       <p class="p-social">
-        <a href="mailto:jack@jackhughesweb.com"><img src="/img/email.png" alt="" class="img-social"></a>
-        <a href="/vcard/jackhughes.vcf"><img src="/img/vcard.png" alt="" class="img-social"></a>
-        <a href="https://twitter.com/jackhughesweb"><img src="/img/twitter.png" alt="" class="img-social"></a>
-        <a href="https://github.com/jackhughesweb"><img src="/img/github.png" alt="" class="img-social"></a>
-        <a href="https://soundcloud.com/jackhughesweb"><img src="/img/soundcloud.png" alt="" class="img-social"></a>
-        <a href="http://500px.com/jackhughesweb"><img src="/img/500px.png" alt="" class="img-social"></a>
-        <a href="https://dribbble.com/jackhughesweb"><img src="/img/dribbble.png" alt="" class="img-social"></a>
-        <a href="http://stackoverflow.com/users/1628597/jack-hughes"><img src="/img/stackoverflow.png" alt="" class="img-social"></a>
+        <a href="mailto:jack@jackhughesweb.com"><span class="social social-email"></span></a>
+        <a href="/vcard/jackhughes.vcf"><span class="social social-vcard"></span></a>
+        <a href="https://twitter.com/jackhughesweb"><span class="social social-twitter"></span></a>
+        <a href="https://github.com/jackhughesweb"><span class="social social-github"></span></a>
+        <a href="https://soundcloud.com/jackhughesweb"><span class="social social-soundcloud"></span></a>
+        <a href="http://500px.com/jackhughesweb"><span class="social social-500px"></span></a>
+        <a href="https://dribbble.com/jackhughesweb"><span class="social social-dribbble"></span></a>
+        <a href="http://stackoverflow.com/users/1628597/jack-hughes"><span class="social social-stackoverflow"></span></a>
+        <!-- Preloading -->
+        <span class="social social-email-preload preload"></span>
+        <span class="social social-vcard-preload preload"></span>
+        <span class="social social-twitter-preload preload"></span>
+        <span class="social social-github-preload preload"></span>
+        <span class="social social-soundcloud-preload preload"></span>
+        <span class="social social-500px-preload preload"></span>
+        <span class="social social-dribbble-preload preload"></span>
+        <span class="social social-stackoverflow-preload preload"></span>
       </p>
     </article>
   </section>
