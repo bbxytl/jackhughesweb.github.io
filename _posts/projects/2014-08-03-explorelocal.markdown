@@ -10,7 +10,9 @@ work: true
 active: true
 redirecturl: "https://github.com/jackhughesweb/explorelocal"
 github-repo: "explorelocal"
+logo: "/img/work/explorelocal-hero.png"
 ---
+
 ExploreLocal is a game for discovering and identifying nearby places of interest. Players are presented with clues from sources such as Wikipedia and Flickr and they then have to guess where the place is.
 
 ![Screenshot](/img/work/explorelocal-screenshot.png)

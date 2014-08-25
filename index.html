@@ -28,10 +28,14 @@ nav: about
       <ul>
         {% for project in site.tags.project limit: 3 %}
           <li>
-            <a href="{{ project.url }}">
-              {{ project.title }}
-              <br>
-              <small>{{ project.subtitle }}</small>
+            <a href="{{ project.url }}"{% if project.logo %} class="project-logo-link"{% endif %}>
+              {% if project.logo %}
+                <img src="{{ project.logo }}" alt="{{ project.title }}" class="project-logo">
+              {% else %}
+                {{ project.title }}
+                <br>
+                <small>{{ project.subtitle }}</small>
+              {% endif %}
             </a>
           </li>
         {% endfor %}
@@ -49,16 +53,8 @@ nav: about
         <a href="http://500px.com/jackhughesweb"><span class="social social-500px"></span></a>
         <a href="https://dribbble.com/jackhughesweb"><span class="social social-dribbble"></span></a>
         <a href="http://stackoverflow.com/users/1628597/jack-hughes"><span class="social social-stackoverflow"></span></a>
-        <!-- Preloading -->
-        <span class="social social-email-preload preload"></span>
-        <span class="social social-vcard-preload preload"></span>
-        <span class="social social-twitter-preload preload"></span>
-        <span class="social social-github-preload preload"></span>
-        <span class="social social-soundcloud-preload preload"></span>
-        <span class="social social-500px-preload preload"></span>
-        <span class="social social-dribbble-preload preload"></span>
-        <span class="social social-stackoverflow-preload preload"></span>
       </p>
     </article>
   </section>
+  <div class="preloader"><span class="social social-email-preload preload"></span><span class="social social-vcard-preload preload"></span><span class="social social-twitter-preload preload"></span><span class="social social-github-preload preload"></span><span class="social social-soundcloud-preload preload"></span><span class="social social-500px-preload preload"></span><span class="social social-dribbble-preload preload"></span><span class="social social-stackoverflow-preload preload"></span></div>
 </div>

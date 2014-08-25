@@ -6,11 +6,10 @@ nav: portfolio
   <div class="header-container {% if page.header %}header-photo{% else %}header-no-photo{% endif %}">
     <section class="header">
       <article>
-        <h1>{{ page.title }}</h1>
-        {% if page.active %}
-          <small><span class="label-active">Active</span></small>
+        {% if page.logo %}
+          <img src="{{ page.logo }}" alt="{{ page.title }}" class="project-logo-wide">
         {% else %}
-          <small><span class="label-discontinued">Discontinued</span></small>
+          <h1>{{ page.title }}</h1>
         {% endif %}
       </article>
     </section>
