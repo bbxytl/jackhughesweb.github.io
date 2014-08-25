@@ -547,10 +547,6 @@ span.social-email {
   background-image: url('/img/email.png');
 }
 
-span.social-vcard {
-  background-image: url('/img/vcard.png');
-}
-
 span.social-twitter {
   background-image: url('/img/twitter.png');
 }
@@ -577,10 +573,6 @@ span.social-stackoverflow {
 
 span.social-email:hover, span.social-email-preload {
   background-image: url('/img/email-hover.png');
-}
-
-span.social-vcard:hover, span.social-vcard-preload {
-  background-image: url('/img/vcard-hover.png');
 }
 
 span.social-twitter:hover, span.social-twitter-preload {
