@@ -272,12 +272,6 @@ div.home section.design * {
   color: #ffffff;
 }
 
-/* Contact me section */
-
-div.home section.contact a {
-  color: #000000;
-}
-
 /* Project logos */
 
 a.project-logo-link {
@@ -529,18 +523,38 @@ div.header-container.header-photo a.photo-credit {
 
 /* Social buttons */
 
-p.p-social {
-  text-align: center;
+p.p-social * {
+  vertical-align: middle;
+}
+
+p.p-social a {
+  text-decoration: none;
+  color: #2980B9;
+  display: block;
+}
+
+p.p-social a:hover {
+  text-decoration: underline;
+  color: #439CD5;
 }
 
 span.social {
   width: 3em;
   height: 3em;
-  margin: 0.5em;
+  margin: 0.5em 0.5em 0.5em 0;
   background-image: url('/img/icon-sprite.png');
   background-size: cover;
   display: inline-block;
   background-repeat: no-repeat;
+}
+
+span.social-name {
+  font-size: 1.25rem;
+  display: inline-block;
+}
+
+p.p-social a:hover span.social-name {
+  text-decoration: underline;
 }
 
 span.social-email {
@@ -555,48 +569,32 @@ span.social-github {
   background-image: url('/img/github.png');
 }
 
-span.social-dribbble {
+/*span.social-dribbble {
   background-image: url('/img/dribbble.png');
-}
+}*/
 
 span.social-500px {
   background-image: url('/img/500px.png');
 }
 
-span.social-soundcloud {
-  background-image: url('/img/soundcloud.png');
-}
-
-span.social-stackoverflow {
-  background-image: url('/img/stackoverflow.png');
-}
-
-span.social-email:hover, span.social-email-preload {
+a:hover span.social-email, span.social-email-preload {
   background-image: url('/img/email-hover.png');
 }
 
-span.social-twitter:hover, span.social-twitter-preload {
+a:hover span.social-twitter, span.social-twitter-preload {
   background-image: url('/img/twitter-hover.png');
 }
 
-span.social-github:hover, span.social-github-preload {
+a:hover span.social-github, span.social-github-preload {
   background-image: url('/img/github-hover.png');
 }
 
-span.social-dribbble:hover, span.social-dribbble-preload {
+/*a:hover span.social-dribbble, span.social-dribbble-preload {
   background-image: url('/img/dribbble-hover.png');
-}
+}*/
 
-span.social-500px:hover, span.social-500px-preload {
+a:hover span.social-500px, span.social-500px-preload {
   background-image: url('/img/500px-hover.png');
-}
-
-span.social-soundcloud:hover, span.social-soundcloud-preload {
-  background-image: url('/img/soundcloud-hover.png');
-}
-
-span.social-stackoverflow:hover, span.social-stackoverflow-preload {
-  background-image: url('/img/stackoverflow-hover.png');
 }
 
 .preload {
