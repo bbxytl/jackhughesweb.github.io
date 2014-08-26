@@ -1,4 +1,6 @@
 name: Jack Hughes
 markdown: redcarpet
-pygments: true
+highlighter: true
 permalink: /blog/:title
+gems:
+  - jekyll-sitemap
