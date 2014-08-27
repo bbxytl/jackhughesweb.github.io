@@ -12,16 +12,6 @@ nav: about
       <h2>Student. Web developer and designer. Blogger.</h2>
     </article>
   </section>
-  <section class="blog">
-    <article>
-      <h2><a href="/blog" class="no-dec arrow-white">Blog posts <span class="arrow"></span></a></h2>
-      <ul>
-        {% for post in site.tags.blog limit: 3 %}
-          <li><a href="{{ post.url }}">{{ post.title }}<br><small>{{ post.date | date: "%-d %B, %Y" }}</small></a></li>
-        {% endfor %}
-      </ul>
-    </article>
-  </section>
   <section class="projects">
     <article>
       <h2><a href="/projects" class="no-dec arrow-white">Projects <span class="arrow"></span></a></h2>
@@ -38,6 +28,16 @@ nav: about
               {% endif %}
             </a>
           </li>
+        {% endfor %}
+      </ul>
+    </article>
+  </section>
+  <section class="blog">
+    <article>
+      <h2><a href="/blog" class="no-dec arrow-white">Blog posts <span class="arrow"></span></a></h2>
+      <ul>
+        {% for post in site.tags.blog limit: 3 %}
+          <li><a href="{{ post.url }}">{{ post.title }}<br><small>{{ post.date | date: "%-d %B, %Y" }}</small></a></li>
         {% endfor %}
       </ul>
     </article>
