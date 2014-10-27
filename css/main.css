@@ -466,6 +466,16 @@ div.blog-post section.go-home {
   color: white;
 }
 
+div.blog-post section.go-home h3, div.blog-post section.go-home h3 > * , div.blog-post section.go-home h3 > * > * {
+  vertical-align: middle;
+}
+
+div.blog-post section.go-home img {
+  height: 3em;
+  border-radius: 100em; 
+  margin-right: 0.5em;
+}
+
 p.blog-post-preview a {
   color: #000000;
   background-color: #ffffff;
@@ -671,14 +681,4 @@ span.label-discontinued {
   padding: 0.5em;
   border-radius: 0.5em;
   font-size: 0.8em;
-}
-
-.go-home h3, .go-home h3 > * , .go-home h3 > * > * {
-  vertical-align: middle;
-}
-
-.go-home img {
-  height: 3em;
-  border-radius: 100em; 
-  margin-right: 0.5em;
 }
