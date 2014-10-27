@@ -447,7 +447,21 @@ div.blog-post h2.attr a {
   color: #ffffff;
 }
 
+div.blog-post section.subscribe {
+  background-color: #81bde3;
+  color: white;
+}
+
+div.blog-post section.subscribe > * > * {
+  vertical-align: middle;
+}
+
 div.blog-post section.next-post {
+  background-color: #439cd5;
+  color: white;
+}
+
+div.blog-post section.go-home {
   background-color: #2980b9;
   color: white;
 }
@@ -464,7 +478,11 @@ p.blog-post-preview a {
   cursor: pointer;
 }
 
-div.blog-post section.subscribe h3, div.blog-post section.next-post h3 {
+p.blog-post-preview a:hover {
+  background-color: #bfdef1;
+}
+
+div.blog-post section.subscribe h3, div.blog-post section.next-post h3, div.blog-post section.go-home h3 {
   font-size: 2.25em;
 }
 
@@ -478,12 +496,17 @@ div.blog-post hr {
 }
 
 a.rss-feed {
-  background-color: #000000;
+  background-color: #444444;
   color: #ffffff;
   text-decoration: none;
-  padding: 0.2em 0.4em;
+  padding: 0.3em 0.5em;
   border-radius: 0.5em;
   display: inline-block;
+  border: 1px solid #000000;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 section.post p {
@@ -648,4 +671,14 @@ span.label-discontinued {
   padding: 0.5em;
   border-radius: 0.5em;
   font-size: 0.8em;
+}
+
+.go-home h3, .go-home h3 > * , .go-home h3 > * > * {
+  vertical-align: middle;
+}
+
+.go-home img {
+  height: 3em;
+  border-radius: 100em; 
+  margin-right: 0.5em;
 }
