@@ -1,6 +1,6 @@
 ---
 layout: blogpost
-title:  Introduction to Cryptography
+title:  Introduction to (Christmas) Cryptography
 date:   2014-12-23
 permalink: /blog/xmas-crypto/
 header: "/img/blog/yrs2014.jpg"
