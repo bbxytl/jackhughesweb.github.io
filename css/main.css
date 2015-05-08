@@ -404,6 +404,24 @@ div.blog-post section.post {
   background-color: #ffffff;
 }
 
+div.blog-post section.post article h1, div.blog-post section.post article h2, div.blog-post section.post article h3 {
+  margin: 1.5em 0;
+}
+
+div.blog-post section.post article h1 {
+  font-size: 1.65rem;
+  text-align: center;
+  margin: 3em 0 1.5em 0;
+}
+
+div.blog-post section.post article h2 {
+  font-size: 1.50rem;
+}
+
+div.blog-post section.post article h3 {
+  font-size: 1.40rem;
+}
+
 div.blog-post section.post article img {
   max-width: 100%;
 }
@@ -506,17 +524,16 @@ div.blog-post hr {
 }
 
 a.rss-feed {
-  background-color: #444444;
+  background-color: #439cd5;
   color: #ffffff;
   text-decoration: none;
   padding: 0.3em 0.5em;
   border-radius: 0.5em;
   display: inline-block;
-  border: 1px solid #000000;
-  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: 500;
+}
+
+a.rss-feed:hover {
+  background-color: #2980b9;
 }
 
 section.post p {
