@@ -163,6 +163,10 @@ div.home section.header * {
   color: #ffffff;
 }
 
+div.home section.header h2 {
+  color: #91d1ff;
+}
+
 div.home section.header img.logo {
   width: 14em;
   height: 14em;
