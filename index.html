@@ -16,7 +16,7 @@ nav: about
     <article>
       <h2><!-- <a href="/projects" class="no-dec arrow-white"> -->Projects<!--  <span class="arrow"></span></a> --></h2>
       <ul>
-        {% for project in site.tags.project limit: 3 %}
+        {% for project in site.tags.project limit: 3 | sort: 'date' %}
           <li>
             <a href="{{ project.url }}"{% if project.logo %} class="project-logo-link"{% endif %}>
               {% if project.logo %}

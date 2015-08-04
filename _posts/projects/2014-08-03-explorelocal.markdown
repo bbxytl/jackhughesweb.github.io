@@ -7,7 +7,7 @@ permalink: /projects/explorelocal/
 tags:
 - project
 work: true
-active: true
+active: false
 redirecturl: "https://github.com/jackhughesweb/explorelocal"
 github-repo: "explorelocal"
 logo: "/img/work/explorelocal-hero.png"
