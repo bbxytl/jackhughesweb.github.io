@@ -23,4 +23,4 @@ Points are gained from accurately choosing the correct location and points are d
 
 I created ExploreLocal for YRS Festival of Code 2014,  which I wrote a [blog post](/blog/yrs2014/) about. ExploreLocal reached the semi-final for Best in Show.
 
-ExploreLocal is currently live at [explore.jackhughesweb.com](http://explore.jackhughesweb.com) and the source code is currently on [GitHub](https://github.com/jackhughesweb/explorelocal).
+ExploreLocal was live at explore.jackhughesweb.com, however the source code is currently on [GitHub](https://github.com/jackhughesweb/explorelocal).
