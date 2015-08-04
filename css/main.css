@@ -623,6 +623,10 @@ span.social-github {
   background-image: url('/img/github.png');
 }
 
+span.social-keybase {
+  background-image: url('/img/keybase.png');
+}
+
 /*span.social-dribbble {
   background-image: url('/img/dribbble.png');
 }*/
@@ -641,6 +645,10 @@ a:hover span.social-twitter, span.social-twitter-preload {
 
 a:hover span.social-github, span.social-github-preload {
   background-image: url('/img/github-hover.png');
+}
+
+a:hover span.social-keybase, span.social-keybase-preload {
+  background-image: url('/img/keybase-hover.png');
 }
 
 /*a:hover span.social-dribbble, span.social-dribbble-preload {
