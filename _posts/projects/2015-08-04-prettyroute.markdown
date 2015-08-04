@@ -21,6 +21,6 @@ PrettyRoute displays your recommended route, with a list of places to visit and 
 
 ![Screenshot](/img/work/prettyroute-screenshot2.png)
 
-I created PrettyRoute for YRS Festival of Code 2015 with my group [Team Screaming Square Dinosaur](https://github.com/teamscreamingsquaredinosaur). PrettyRoute reached the semi-final for Should Exist.
+I created PrettyRoute for YRS Festival of Code 2015 ([blog post](/blog/yrs2015/)) with my group [Team Screaming Square Dinosaur](https://github.com/teamscreamingsquaredinosaur). PrettyRoute reached the semi-final for Should Exist.
 
 PrettyRoute is currently live at [prettyroute.xyz](https://prettyroute.xyz) and the source code is currently on [GitHub](https://github.com/teamscreamingsquaredinosaur/prettyroute).

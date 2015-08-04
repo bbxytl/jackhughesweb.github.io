@@ -34,8 +34,8 @@ After the finals, we all departed.
 
 Over the weekend, I caught up with people I met from last year (and was shown a [pretty cool project](http://matthewwellings.com/rippletank/) by a Rewired State member), closed as many GitHub issues as I could, and wrote many many many lines of code.
 
-The Festival of Code has enabled me to meet new people, create awesome projects and work with open data. I can't say thank you enough to YRS for the festival. It's truly incredible - the whole community is just amazing!
+The Festival of Code has enabled me to meet new people, create awesome projects and work with open data. I can't say thank you enough to the staff, volunteers, center leads, mentors and everyone else at YRS for the festival. It's truly incredible - the whole community is just amazing!
 
-I can't participate next year, but I'm definitely going to mentor as there were a shortage of mentors this year.
+I can't participate next year, but I'm definitely going to mentork instead.
 
-If you're reading this, you love to code and you haven't signed up yet, go and checkout the Festival of Code website at [festival.yrs.io](http://festival.yrs.io).
+If you're reading this, you love to code and you're interested in taking part, go and checkout the Festival of Code website at [festival.yrs.io](http://festival.yrs.io).
