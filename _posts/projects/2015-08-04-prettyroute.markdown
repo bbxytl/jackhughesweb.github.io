@@ -2,7 +2,7 @@
 layout: project
 title:  "PrettyRoute"
 subtitle: "YRS Festival of Code 2015 project (Should Exist Semi-Finalist) - a route planner to find you the most scenic route"
-date: 2014-08-03
+date: 2015-08-03
 permalink: /projects/prettyroute/
 tags:
 - project
