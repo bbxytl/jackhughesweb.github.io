@@ -540,7 +540,7 @@ a.rss-feed:hover {
   background-color: #2980b9;
 }
 
-section.post p {
+section.post p, section.post ul li, section.post ol li {
   font-weight: 300;
   word-wrap: break-word;
 }
