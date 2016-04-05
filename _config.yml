@@ -1,5 +1,4 @@
 name: Jack Hughes
-markdown: redcarpet
 highlighter: pygments
 permalink: /blog/:title
 gems:
