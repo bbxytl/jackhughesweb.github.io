@@ -11,7 +11,7 @@ active: true
 Arrow was made by [Jack Hughes](http://jackhughesweb.com) as a way to read [Quiver](https://github.com/HappenApps/Quiver/wiki/Quiver-Data-Format) libraries and notebooks on iOS devices.
 
 The most recent version of this app (v1.0) uses SwiftyDropbox, LTMarkdownParser, MMMarkdown, Regex, ReachabilitySwift, MBProgressHUD.
-For older versions, [view the history of this page on GitHub](https://github.com/jackhughesweb/jackhughesweb.github.io/blob/master/_posts/projects/2016-09-13%20arrow%20credits.markdown).
+For older versions, [view the history of this page on GitHub](https://github.com/jackhughesweb/jackhughesweb.github.io/blob/master/projects/arrow/credits.markdown).
 
 ## Licenses:
 
@@ -60,7 +60,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ### [MMMarkdown](https://github.com/mdiep/MMMarkdown)
-**Copyright (c) 2012-2013 Matt Diephouse**
+Copyright (c) 2012-2013 Matt Diephouse
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
