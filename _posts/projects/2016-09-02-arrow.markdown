@@ -12,6 +12,9 @@ active: true
 
 <img src="/img/projects/arrow/icon.png" alt="Arrow Icon" width="120" height="120" style="border-radius: 25%">
 
+
+<a href="https://itunes.apple.com/us/app/arrow-quiver-reader/id1150825432?ls=1&mt=8"><img src="/img/projects/arrow/appstore.svg" alt="Download on the App Store"></a>
+
 Arrow is an unofficial companion to [Quiver](https://github.com/HappenApps/Quiver/wiki/Quiver-Data-Format) for Mac, for reading libraries and notebooks on iOS devices. The app features Dropbox syncing and offline support, for reading without a network connection, as well as rendering Markdown notes and LaTeX equations. 
 
 The app uses a number of [open source libraries](/projects/arrow/credits/).
