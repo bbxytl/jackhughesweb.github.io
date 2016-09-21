@@ -8,7 +8,7 @@ work: false
 active: true
 ---
 
-Arrow was made by [Jack Hughes](http://jackhughesweb.com) as a way to read [Quiver](https://github.com/HappenApps/Quiver/wiki/Quiver-Data-Format) libraries and notebooks on iOS devices.
+[Arrow](/projects/arrow/) was made by [Jack Hughes](http://jackhughesweb.com) as a way to read [Quiver](https://github.com/HappenApps/Quiver/wiki/Quiver-Data-Format) libraries and notebooks on iOS devices.
 
 The most recent version of this app (v1.0) uses SwiftyDropbox, LTMarkdownParser, MMMarkdown, Regex, ReachabilitySwift, MBProgressHUD.
 For older versions, [view the history of this page on GitHub](https://github.com/jackhughesweb/jackhughesweb.github.io/blob/master/projects/arrow/credits.markdown).

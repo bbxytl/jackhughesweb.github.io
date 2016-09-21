@@ -10,4 +10,16 @@ work: true
 active: true
 ---
 
-I'm currently working on an app to read [Quiver](https://github.com/HappenApps/Quiver/wiki/Quiver-Data-Format) libraries and notebooks on iOS devices. The app is currently in development, and this page will be updated soon.
+<img src="/img/projects/arrow/icon.png" alt="Arrow Icon" width="120" height="120" style="border-radius: 25%">
+
+Arrow is an unofficial companion to [Quiver](https://github.com/HappenApps/Quiver/wiki/Quiver-Data-Format) for Mac, for reading libraries and notebooks on iOS devices. The app features Dropbox syncing and offline support, for reading without a network connection, as well as rendering Markdown notes and LaTeX equations. 
+
+The app uses a number of [open source libraries](/projects/arrow/credits/).
+
+<table>
+	<tr>
+		<td><img src="/img/projects/arrow/screen1.png" alt="Arrow Screenshot"></td>
+		<td><img src="/img/projects/arrow/screen2.png" alt="Arrow Screenshot"></td>
+		<td><img src="/img/projects/arrow/screen3.png" alt="Arrow Screenshot"></td>
+	</tr>
+</table>
