@@ -10,7 +10,8 @@ active: true
 
 [Arrow](/projects/arrow/) was made by [Jack Hughes](http://jackhughesweb.com) as a way to read [Quiver](https://github.com/HappenApps/Quiver/wiki/Quiver-Data-Format) libraries and notebooks on iOS devices.
 
-The most recent version of this app (v1.0) uses SwiftyDropbox, LTMarkdownParser, MMMarkdown, Regex, ReachabilitySwift, MBProgressHUD.
+The most recent version of this app (v1.0) uses SwiftyDropbox, LTMarkdownParser, MMMarkdown, Regex, ReachabilitySwift, MBProgressHUD, and MathJax.
+
 For older versions, [view the history of this page on GitHub](https://github.com/jackhughesweb/jackhughesweb.github.io/blob/master/projects/arrow/credits.markdown).
 
 ## Licenses:
@@ -143,3 +144,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+### [MathJax](https://github.com/mathjax/MathJax)
+Apache License
+Version 2.0, January 2004
+[http://www.apache.org/licenses/](http://www.apache.org/licenses/)
+Full license at [https://github.com/mathjax/MathJax/blob/master/LICENSE](https://github.com/mathjax/MathJax/blob/master/LICENSE)
