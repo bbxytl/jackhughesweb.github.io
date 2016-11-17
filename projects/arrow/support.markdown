@@ -3,7 +3,7 @@ layout: project
 title:  "Arrow - Support"
 subtitle: "Quiver Library Reader for iOS"
 date: 2016-09-02
-permalink: /projects/arrow/credits/
+permalink: /projects/arrow/support/
 work: false
 active: true
 ---
