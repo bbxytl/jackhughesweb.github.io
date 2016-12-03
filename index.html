@@ -18,14 +18,23 @@ nav: about
       <ul>
         {% for project in site.tags.project limit: 3 %}
           <li>
-            <a href="{{ project.url }}"{% if project.logo %} class="project-logo-link"{% endif %}>
-              {% if project.logo %}
-                <img src="{{ project.logo }}" alt="{{ project.title }}" class="project-logo">
-              {% else %}
-                {{ project.title }}
-                <br>
-                <small>{{ project.subtitle }}</small>
-              {% endif %}
+            <a href="{{ project.url }}">
+              <table class="projects-table">
+                <tbody>
+                  <tr>
+                    <td>
+                      {% if project.icon %}
+                        <img src="{{ project.icon }}" alt="{{ project.title }}" class="project-icon">
+                      {% endif %}
+                    </td>
+                    <td>
+                      <b>{{ project.title }}</b>
+                      <br>
+                      <small>{{ project.subtitle }}</small>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </a>
           </li>
         {% endfor %}
@@ -37,7 +46,7 @@ nav: about
       <h2><a href="/blog" class="no-dec arrow-white">Blog posts <span class="arrow"></span></a></h2>
       <ul>
         {% for post in site.tags.blog limit: 3 %}
-          <li><a href="{{ post.url }}">{{ post.title }}<br><small>{{ post.date | date: "%-d %B, %Y" }}</small></a></li>
+          <li><a href="{{ post.url }}"><b>{{ post.title }}</b><br><small>{{ post.date | date: "%-d %B, %Y" }}</small></a></li>
         {% endfor %}
       </ul>
     </article>
