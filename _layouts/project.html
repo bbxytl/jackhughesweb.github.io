@@ -28,6 +28,13 @@ nav: portfolio
       {{ content }}
     </article>
   </section>
+  {% if site.announcement %}
+  <section class="announcement">
+    <article>
+      <p>{{ site.announcement }}</p>
+    </article>
+  </section>
+  {% endif %}
   <a href="/" class="no-dec arrow-white"><section class="go-home">
     <article>
       <h3><img src="/img/avatar.jpg"><span>Jack Hughes <span class="arrow"></span></span></h3>

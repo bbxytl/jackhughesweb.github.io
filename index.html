@@ -12,6 +12,13 @@ nav: about
       <h2 style="font-size: 1.5em; max-width: 50%; margin-left: auto; margin-right: auto">Web &amp; iOS developer, and second year Computer Science student at University of Birmingham</h2>
     </article>
   </section>
+  {% if site.announcement %}
+  <section class="announcement">
+    <article>
+      <p>{{ site.announcement }}</p>
+    </article>
+  </section>
+  {% endif %}
   <section class="projects">
     <article>
       <h2><a href="/projects" class="no-dec arrow-white">Projects <span class="arrow"></span></a></h2>

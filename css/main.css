@@ -720,3 +720,23 @@ span.label-discontinued {
   border-radius: 0.5em;
   font-size: 0.8em;
 }
+
+/* Announcement section */
+
+.home section.announcement {
+  background-color: #bcddf2;
+}
+
+.home section.announcement article {
+  padding: 0;
+}
+
+.home section.announcement article p {
+  text-align: center;
+  margin: 0;
+  padding: 1em 0;
+}
+
+.blog-post section.announcement {
+  background-color: #bcddf2;
+}

@@ -3,3 +3,4 @@ highlighter: rouge
 permalink: /blog/:title
 gems:
   - jekyll-sitemap
+announcement: "I'm currently looking for a <b>summer internship for 2017</b> - please <a href=\"mailto:jack@jackhughesweb.com\">email me</a> to get in contact"

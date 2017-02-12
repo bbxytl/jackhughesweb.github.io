@@ -27,6 +27,13 @@ nav: blog
       {{ content }}
     </article>
   </section>
+  {% if site.announcement %}
+  <section class="announcement">
+    <article>
+      <p>{{ site.announcement }}</p>
+    </article>
+  </section>
+  {% endif %}
   <section class="subscribe">
     <article>
       <h3>Subscribe</h3>
@@ -39,16 +46,16 @@ nav: blog
   <section class="next-post">
     <article>
       <h3>Read next:</h3>
-      {% if page.next %} 
+      {% if page.next %}
         {% for post in site.tags.blog limit: 1 %}
           <p class="blog-post-preview"><a href="{{ post.url }}">{{ post.title }}<br><small>{{ post.date | date: "%-d %B, %Y" }}</small></a></p>
         {% endfor %}
       {% else %}
-        {% if page.previous %} 
+        {% if page.previous %}
           {% for post in site.tags.blog limit: 1 offset: 1 %}
             <p class="blog-post-preview"><a href="{{ post.url }}">{{ post.title }}<br><small>{{ post.date | date: "%-d %B, %Y" }}</small></a></p>
           {% endfor %}
-        {% endif %} 
+        {% endif %}
       {% endif %}
       <h4><a href="/blog" class="no-dec arrow-white">More posts <span class="arrow"></span></a></h4>
     </article>
