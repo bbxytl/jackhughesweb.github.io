@@ -405,6 +405,25 @@ div.blog-list section.blog.design-list ul li a.img-large:hover {
   background-color: none;
 }
 
+ul li a.blog-link-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ul li a.blog-link-background:hover {
+  opacity: 0.8;
+}
+
+ul li a.blog-link-background * {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 10px #000000;
+}
+
+ul li a.blog-link-background:hover * {
+  color: #dddddd !important;
+}
+
 div.blog-post section > * {
   max-width: 50em;
   margin-left: auto;

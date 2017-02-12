@@ -17,7 +17,13 @@ nav: blog
       <h2>Blog posts</h2>
       <ul>
         {% for post in site.tags.blog %}
-          <li><a href="{{ post.url }}"><b>{{ post.title }}</b><br><small>{{ post.date | date: "%-d %B, %Y" }}</small></a></li>
+
+          {% if post.header %}
+            <li><a href="{{ post.url }}" class="blog-link-background" style="background-image: url('{{ post.header }}');"><b>{{ post.title }}</b><br><small>{{ post.date | date: "%-d %B, %Y" }}</small></a></li>
+          {% else %}
+            <li><a href="{{ post.url }}"><b>{{ post.title }}</b><br><small>{{ post.date | date: "%-d %B, %Y" }}</small></a></li>
+          {% endif %}
+
         {% endfor %}
       </ul>
     </article>
