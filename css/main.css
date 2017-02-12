@@ -171,6 +171,7 @@ div.home section.header img.logo {
   width: 14em;
   height: 14em;
   border-radius: 100em;
+  background-color: rgb(222,221,217);
 }
 
 @media screen and (max-width: 20em) {
@@ -294,6 +295,7 @@ img.project-logo-wide {
 img.project-icon {
   max-height: 4em;
   max-width: 4em;
+  width: 4em;
   vertical-align: center;
   margin-right: 1em;
   border-radius: 0.2em;
@@ -409,6 +411,7 @@ ul li a.blog-link-background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #444444 !important;
 }
 
 ul li a.blog-link-background:hover {
