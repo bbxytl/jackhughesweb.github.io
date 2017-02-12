@@ -740,3 +740,15 @@ span.label-discontinued {
 .blog-post section.announcement {
   background-color: #bcddf2;
 }
+
+/* Sticky footer */
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.blog-post .post {
+  flex: 1;
+}
