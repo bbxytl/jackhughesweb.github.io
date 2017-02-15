@@ -462,7 +462,7 @@ div.blog-post section.post article img {
 }
 
 div.blog-post section.post article * {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 div.header-container {
@@ -773,4 +773,9 @@ span.label-discontinued {
 
 .blog-post .post {
   flex: 1;
+}
+
+.blog-post .post {
+  opacity: 0;
+  margin-top: 5em;
 }
