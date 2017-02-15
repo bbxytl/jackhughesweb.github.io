@@ -572,8 +572,12 @@ a.rss-feed:hover {
 }
 
 section.post p, section.post ul li, section.post ol li {
-  font-weight: 300;
+  font-weight: normal;
   word-wrap: break-word;
+}
+
+strong, b {
+	font-weight: 900;
 }
 
 div.blog-post div.header-no-photo {
