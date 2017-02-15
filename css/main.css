@@ -576,7 +576,7 @@ section.post p, section.post ul li, section.post ol li {
   word-wrap: break-word;
 }
 
-strong, b {
+section.post strong, section.post b {
 	font-weight: 900;
 }
 
